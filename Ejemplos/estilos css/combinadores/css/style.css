@@ -1,0 +1,5 @@
+/* hermano cercano (Adjacent Siblings) */
+
+h2 + p{
+    color: red;
+}

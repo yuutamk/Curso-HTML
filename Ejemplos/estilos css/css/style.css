@@ -1,0 +1,18 @@
+p{
+    color: darkcyan;
+    font-size: 40px;
+}
+
+/* Class */
+
+.parrafo{
+    color: royalblue;
+}
+
+/* ID */
+
+#texto{
+    color: darkgoldenrod;
+    font-size: 24px;
+}
+

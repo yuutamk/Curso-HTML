@@ -7,10 +7,10 @@
 4. [Página Web](#pagina-web)
 5. [Anatomía de la web](#anatomia-web)
 6. [IDE Y EDITORES DE CODIGO](#ide-edit)
-7. [Elemento 7](#elemento-7)
-8. [Elemento 8](#elemento-8)
-9. [Elemento 9](#elemento-9)
-10. [Elemento 10](#elemento-10)
+7. [Mi primera página web](#primera-web)
+8. [Etiquetas de Texto](#etiquetas-texto)
+9. [Etiqueta \<p>](#etiqueta-p)
+<!-- 10. [Elemento 10](#elemento-10) -->
 
 </details>
 

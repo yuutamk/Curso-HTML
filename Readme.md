@@ -224,25 +224,251 @@ Un ambiente de desarrollo integrado, a diferencia de un editor, es un programa m
 
 ## HTML
 
-[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20en%203%20Minutos%20(No,%20no%20es%20un%20lenguaje%20de%20Programación%20pero.%20).mp4)
+[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
+
+[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
 
 [![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
 
 -------------------------------------
 HTML (Hyper Text Markup Lenguage) es un leguaje de marcado de texto, lo cual nos indica que no es un lenguaje de programación como Java, PHP, C o VisualBasic. HTML es el lenguaje para escribir páginas web. Las marcas, conocidas como etiquetas, describen la forma en la que se estructura el contenido de una página web.
 
-Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta <p> se utiliza para delimitar párrafos de texto y la etiqueta <img> para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos, en este curso vamos a utilizar el editor Brackets.
+Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta **\<p>** se utiliza para delimitar párrafos de texto y la etiqueta **\<img>** para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos.
 
-html5
 
-El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio. En este curso hemos intentado tener en cuenta las etiquetas incorporadas al lenguaje HTML 5.2. en la última recomendación de W3C disponible el 14 de diciembre de 2017 mientras redactábamos este curso.
 
- Si quieres saber las historia del lenguaje HTML y de Internet visita este tema básico: Historia del HTML y de Internet 
+El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
+
+
+
+ Si quieres saber las historia del lenguaje HTML y de Internet visita este tema básico: [Historia HTML](/history.md)
+
+ 
 
 Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
 
 En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo CSS, ya que Javascript entra dentro de otra categoría, la de los lenguajes de programación.
 
-Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. Por otro lado, también tenemos la unidad 18 con las etiquetas de HTML ordenadas alfabéticamente. Para cada etiqueta se muestra una breve definición de la etiqueta, un ejemplo de su uso y enlaces para ver su definición según W3C.org. De esta forma este curso también se puede utilizar como referencia para los que ya saben HTML pero necesitan consultar alguna etiqueta en concreto.
+Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
 
-A lo largo del curso iremos haciendo ejercicios paso a paso, al final de cada tema hay unos ejercicios propuestos con su solución. También hay autoevaluaciones y vídeos donde se explica lo fundamental de cada unidad. Aprender HTML y CSS es fácil, anímate a seguir este curso y lo comprobarás por ti mismo.
+### Etiquetas
+
+Las etiquetas (marcas) delimitan cada uno de los elementos que componen un documento HTML.
+
+El lenguaje HTML se basa en etiquetas, por eso es importante entender bien la sintaxis de las etiquetas. El siguiente esquema muestra las partes de una etiqueta HTML genérica.
+
+<!-- [![Anatom-a-de-Etiqueta.png](https://i.postimg.cc/k4s9SqbT/Anatom-a-de-Etiqueta.png)](https://postimg.cc/phmgbNkj) -->
+
+![](https://www.aulaclic.es/html/graficos/sintaxis_html.svg)
+
+La etiqueta de apertura está delimitada por el signo < "menor que", a continuación el propio nombre de la etiqueta (en este caso p), y opcionalmente, un atributo (en este caso class="fondo"), finalmente el signo > "mayor que".
+
+A continuación está el texto del contenido de la etiqueta, lo más frecuente es un texto, pero podría ser otra etiqueta, una imagen, ...
+
+La etiqueta de cierre está delimitada por el signo < "menor que", a continuación la barra inclinada /, el propio nombre de la etiqueta (en este caso p), y finalmente el signo > "mayor que".
+
+Algunas etiquetas no tienen contenido, y se cierran sobre sí mismas, no tienen etiqueta de cierre, se llaman etiquetas vacías, como la etiqueta \<br>. En estas etiquetas opcionalmente se puede colocar una barra justo antes del signo >, por ejemplo: \<br />. La etiqueta \<br> produce un salto de línea. Las etiquetas vacías no tienen contenido pero si pueden tener atributos. Algunas otras etiquetas vacías son  \<hr>, \<img>, \<input>, \<link>, \<meta>, \<param> y \<source>.
+
+En una etiqueta, la primera palabra que aparece es el nombre de la etiqueta. También podemos encontrar atributos con sus valores, siguiendo el formato ``<etiqueta atributo1="valor" atributo2="valor">``. La forma más correcta es escribir el nombre de la etiqueta y los atributos en minúscula, y los valores entre comillas dobles.
+
+Por ejemplo, ``<a href="https://www.conversa.com.mx">Visita Conversa\</a>``
+
+Produce este resultado en el navegador:
+
+[Visita Conversa](https://www.conversa.com.mx)
+
+Si un atributo tiene más de un valor, se escriben todos los valores dentro de las mismas comillas, separados por espacios en blanco, por ejemplo ``<etiqueta atributo="valor1 valor2">``.
+
+En general las etiquetas se pueden anidar pero no se pueden 'cruzar'. Estas dos etiquetas \<p> y \<div>, están anidadas correctamente:
+
+```html
+<div>
+<p>
+Texto del párrafo
+</p>
+</div>
+```
+Es incorrecto cruzarlas así:
+```html
+<div>
+<p>
+Texto del párrafo
+</div>
+</p>
+```
+
+La sintaxis de las etiquetas HTML ha sufrido variaciones a lo largo del tiempo y hay etiquetas que ya no está recomendado su uso. Por esto se pueden encontrar páginas web antiguas cuyo código HTML no se considera correcto hoy en dia, sin embargo, esas páginas siguen funcionando y mostrando el contenido para el que fueron diseñadas.
+
+Por otro lado, los navegadores pueden obviar pequeños errores y mostrar la página correctamente, como si no tuviera esos errores.
+
+Para ver los errores de una página web existen validadores de código HTML, como el de W3C, que nos muestran los errores indicando su grado de gravedad.
+
+## Mi primera página web<a name="primera-web"></a>
+Vamos a comenzar por escribir una página web muy sencilla. Para ello podemos utilizar cualquier editor de texto sin formato, por ejemplo, el Bloc de Notas (Notepad) incluido en Windows. En ordenadores Apple puedes usar el TextEdit. Para abrir el Bloc de Notas en Windows 8 o posterior, teclea Bloc de Notas en la caja de búsqueda de la barra de tareas y ábrelo. En Windows 7 desde el Menú Inicio → Programas → Accesorios → Bloc de notas
+
+El aspecto del Bloc de Notas es muy simple, una hoja en blanco con una barra de menús.
+
+![](https://www.aulaclic.es/html/graficos/bloc_notas.png)
+
+Escribiremos el siguiente código. Más adelante ya veremos qué es cada elemento:
+
+```html
+<html>
+<head>
+ <title>Mi primera página</title>
+</head>
+<body>
+ <p>Visita mi pagina</p>
+</body>
+</html>
+```
+
+Una vez escrito, vamos a guardarlo. Pero antes de continuar, debemos de explicar lo que es la extensión de un archivo. La extensión indica de qué tipo es un archivo. La extensión son las tres letras que van después del punto al final del nombre de un archivo (por ejemplo, imagen.gif o documento.doc). Puedes abrir cualquier carpeta para comprobarlo. Si no puedes ver las extensiones, es porque Windows las oculta. Si es tu caso, puedes hacer que las muestre, abre el Explorador de Windows y haz clic en la pestaña Vista, abre Mostrar u ocultar y marca la opción Extensiones de nombre de archivo, tal y como muestra la siguiente imagen.
+
+![](https://www.aulaclic.es/html/graficos/extension.png)
+
+Vamos a continuar guardando la página. Pulsamos en el menú Archivo y elegimos Guardar. Introducimos el nombre, por ejemplo primera. Si ahora pulsásemos Guardar, se guardaría con la extensión txt, que indica que es un documento de texto sin formato. Para guardarlo como una página web, debemos de emplear la extensión .html (o .htm). Por lo que completamos el nombre para que quede primera.html y pulsamos Guardar.
+
+![](https://www.aulaclic.es/html/graficos/primera.png)
+
+Ahora, utilizando el Explorador de Windows, abrimos la carpeta en la que hemos guardado el archivo y hacemos doble clic sobre él. Como el archivo tiene extensión .html, se abrirá la página con el navegador que tengamos como predeterminado. Por ejemplo, en Google Chrome, el resultado se ve así:
+
+![vista ejemplo primera](/src/IMG/view-primera.png)
+
+Observa que no se muestra todo lo que hemos escrito. Si te fijas en el documento del Bloc de Notas, verás que todo lo que aparece entre los signos "<" y ">" no se muestra. Esos signos delimitan una etiqueta de HTML, y todas las que hemos utilizado siguen el formato ``<etiqueta>contenido</etiqueta>``. Por ejemplo, la etiqueta \<title> contiene el texto que se mostrará como título de la página, y la etiqueta \<p> indica un párrafo con texto normal.
+
+Por lo tanto, un navegador web es una aplicación capaz de interpretar el código HTML, formado por etiquetas y mostralo debidamente formateado. En cualquier momento, podemos ver el código HTML de la página que estamos viendo. En los navegadores Chrome y Firefox, podemos hacerlo pulsando con el botón derecho sobre una zona de texto de la página para que se abra un menú contextual, desde el que elegiremos Ver código fuente de la página. Otra forma de hacer lo mismos es pulsar las teclas Ctrl + U. Un paso más es el Inspector de código que permite modificar las propiedades CSS y ver el resultado directamente.
+
+Por lo que hemos visto hasta ahora debe quedar claro que una página web es un archivo con extensión .html que se abre con un navegador web y que se escribe con cualquier editor de texto plano.
+
+ Para practicar esto por ti mismo es conveniente que realices este ejercicio paso a paso: Crear mi primera página web.
+
+Para que la página que acabamos de crear la pudiese ver todo el mundo simplemente habría que guardarla en un ordenador especial llamado servidor de Internet.
+
+# Etiquetas de Texto<a name="etiquetas-texto"></a>
+
+## Estructura básica de la página
+
+La primera línea  ``<!DOCTYPE ... >`` no es propiamente una etiqueta de HTML, sino una declaración o instrucción al navegador sobre la versión de HTML que utiliza la página. Para la versión HTML 5, el tipo de documento es html: ``<!DOCTYPE html>``
+
+El resto del documento HTML está contenido dentro de la etiqueta ``<html></html>``. Para indicar el idioma es conveniente añadir el atributo lang="es": ``<html lang="es"></html>``
+
+Dentro de la etiqueta \<html>, encontramos dos subdivisiones, la cabecera, delimitada por las etiquetas ``<head></head>`` y el cuerpo, delimitado por las etiquetas ``<body></body>``. Por lo tanto, el aspecto básico de cualquier página web, es el siguiente:
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		...
+	</head>
+	<body>
+		...
+	</body>
+</html>
+```
+
+La etiqueta \<head> contiene información sobre la página. Por ejemplo contiene etiquetas que pueden decir de qué trata la página, el título que debe de mostrar en la barra del navegador, o código javascript y estilos, que pueden estar en el propio encabezado o como enlaces a otros archivos. Normalmente, lo que contiene esta etiqueta no se muestra en el navegador, es una etiqueta que contiene declaraciones sobre la página pero no contenido propiamente dicho como texto o imágenes.
+
+Las etiquetas que pueden ir dentro de \<head> son \<title> \<style> \<base> \<link> \<meta> \<script> \<noscript>. Iremos viendo estas etiquetas a medida que nos hagan falta ya que ahora no seríamos capaces de entender bien su significado en todos los casos. De momento sólo comentaremos que obligatoriamente debe de contener la etiqueta ``<title></title>``, que contiene el título de la página, que es lo que se ve en la barra de título del navegador. En nuestro ejemplo de la unidad anterior el título era "Mi primera página"
+
+![](/src/IMG/view-primera.png)
+
+Dentro de \<head>, para optimizar la página para diferentes anchos de pantalla, también es conveniente definir el viewport, por ejemplo de esta forma: ``<meta name="viewport" content="vwidth=device.width, initial-scale=1.0">``.
+
+En el \<body> encontramos el contenido de la página, lo que se ve a través del navegador: texto, imágenes, enlaces, tablas, etc... Por lo tanto dentro del \<body> pueden ir la gran mayoría de las etiquetas html.
+
+## Escribiendo texto en el cuerpo de la página
+
+Como estamos diciendo todo el texto de la página estará dentro del **\<body>**, el texto dentro del **\<body>** debe estar, principalmente, dentro de párrafos. En HTML, los párrafos se identifican con la etiqueta ``<p></p>``. Dentro de los párrafos colocaremos texto e imágenes, y algunas etiquetas que nos permitan dar formato al texto. Dentro de un párrafo no debe haber otros párrafos anidados.
+
+A su vez, dentro del `**\<body>**, disponemos de encabezados que nos permiten organizar los títulos o rótulos del texto. Los encabezados van desde el ``<h1></h1>`` de mayor tamaño, al ``<h6></h6>``, el más pequeño. Por ejemplo, utilizaríamos un **\<h1>** para poner el rótulo principal de la página, **\<h2>** para los títulos de los apartados, **\<h3>** para los apartados de segundo nivel, etc. El propio texto de cada apartado iría fuera del encabezado contenido en párrafos ``<p></p>`` u otras etiquetas.
+
+Una de las peculiaridades del texto, es que los espacios en blanco consecutivos y saltos de línea no se muestran como en el código fuente. Si hay varios espacios seguidos, sólo se mostrará uno. Por ejemplo, si en el código fuente escribimos ``Bienvenido a    Conversa`` se verá Bienvenido a Conversa. Si queremos poner varios espacios seguidos, utilizaremos el código html para el espacio, \&nbsp;
+
+El navegador también ignora los saltos de línea. Así si dentro de un párrafo colocamos varios saltos de línea pulsando Intro, estos no se verán. Para crear un salto de línea dentro de un párrafo, utilizamos la etiqueta \<br />.
+
+Cada etiqueta ``<p></p>`` lleva implicito un salto de línea.
+
+Veremos con más detalle y ejemplos la etiqueta \<p>, un poco más adelante
+
+Otras formas de agrupar el contenido dentro de la página web es con las etiquetas \<div> y \<span>. La etiqueta \<div> se utiliza a nivel de bloque y la etiqueta \<span> a nivel de línea o palabras. Estas etiquetas son básicamente contenedores genéricos de contenido. El contenido se escribe entre las etiquetas de apertura y de cierre \<div> contenido \</div>, el criterio para agrupar contenido no está definido estrictamente, por lo tanto podemos utilizarlas para lo que queramos, por ejemplo para dar estilo al contenido.
+
+Podríamos decir que las etiquetas \<div> y \<span> son unas etiquetas neutras dentro de la semántica de HTML. Por el contrario, en HTML 5 han surgido nuevas etiquetas semánticas para agrupar el contenido según su significado. Estas nuevas etiquetas a nivel de bloque son, ``section`` para secciones, ``article`` para artículos, ``header`` para cabeceras, ``nav`` para menús, ``footer`` para pies de página y ``aside`` para contenido en el lateral. A nivel de línea o texto tenemos muchas etiquetas semánticas como ``strong``, ``em``, ``cite``. A lo largo del curso iremos viéndolas con detalle.
+
+El uso de estas nuevas etiquetas semánticas no es obligatorio, pero sí recomendable, sobre todo para tener la información mejor estructurada y también para que los buscadores sean capaces de identificar mejor el contenido de nuestra página. Resumiendo, lo recomendable es utilizar las etiquetas semánticas y en los casos en los que no exista una etiqueta semántica apropiada utilizar etiquetas \<div> y \<span>. En la unidad 12 veremos todo esto con más detalle.
+
+Otras etiquetas para agrupar y organizar el contenido (texto, imágenes, ...) en formatos estructurados son las listas (ul, ol, li) y las tablas (table, tr, td)
+
+## Introducción a las hojas de estilo CSS
+
+Un concepto fundamental en una página web es la separación entre el contenido y el formato, actualmente para dar formato al texto se utilizan las hojas de estilo en cascada CSS (Cascading Style Sheets). Es decir, en el archivo .html se escribe el contenido de la página web con etiquetas html, y en el archivo .css se define el estilo o formato del contenido, por ejemplo el color del texto o el tipo de alineación.
+
+En la imagen siguiente podemos ver un ejemplo.
+
+![](https://www.aulaclic.es/html/graficos/intro_css.png)
+
+En el archivo ejemplo_2_1.html tenemos las etiquetas html y el contenido, y en el archivos ejemplo_2_1.css tenemos la hoja de estilo. El resultado es la página web que se muestra en la parte inferior.
+
+En la hoja de estilo vemos que a la etiqueta **h1** se le ha aplicado el estilo para centrar el texto ``h1 { text-align: center }``, y a la etiqueta **p** se le ha aplicado el estilo para establecer el tipo de letra y el tamaño del texto ``p { (font-family: arial; font-size: 16px; }``, con lo cual a todas las etiquetas p se les aplicarán estos dos estilos.
+
+Si en lugar de aplicar un estilo a todas las etiquetas queremos aplicarlo a unas etiquetas en concreto podemos declarar una clase y asignarla sólo a las etiquetas que queramos. En nuestro ejemplo hemos creado la clase .resaltado que pone el texto en color azul, y lo hemos aplicado a una etiqueta concreta: ``<p class="resaltado">Microsoft es la propietaria de Excel.</p>``.
+
+En este ejemplo, también vemos que para enlazar un archivo .html con un archivo .css se utiliza la siguiente etiqueta: ``<link rel="stylesheet" type="text/css" href="css/ejemplo_2_1.css" />`` que indica que el archivo enlazado se llama ejemplo_2_1.css que se encuentra en la carpeta css.
+
+La hoja de estilo también se puede declarar en el mismo archivo .html, concretamente dentro de la etiqueta head, como se muestra en esta página básica: Incrustar CSS en HTML . Aunque lo recomendable es hacerlo en otro archivo, como acabamos de explicar.
+
+Las reglas de las hojas de estilo están formadas por el selector y entre llaves las declaraciones separadas por punto y coma. Una declaración es un atributo (propiedad) seguido por dos puntos y a continuación el valor de la propiedad.
+
+![Sintaxis CSS](https://www.aulaclic.es/html/graficos/sintaxis_css.svg)
+
+En realidad las hojas de estilo están muy relacionadas con las etiquetas de HTML por lo que deberían explicarse de forma simultánea, aunque por otro lado, es bueno que haya un lugar donde esté agrupada la explicación sobre hojas de estilo. A lo largo del curso iremos viendo más ejemplos del uso de las hojas de estilo al explicar algunas etiquetas, si hay algo que no entiendas de esos ejemplos puedes ir a la unidad 9 para consultar las dudas sobre las hojas de estilo.
+
+## Etiqueta \<p><a name="etiqueta-p"></a>
+
+La etiqueta \<p> define un párrafo.
+
+Ejemplo: ``<p>Un párrafo de texto</p>``
+
+Produce este resultado:
+
+Un párrafo de texto
+
+La etiqueta \<p> es de tipo bloque, es decir, por defecto ocupa una línea completa en la página web. Además, también incluye un margen superior e inferior. Por ejemplo, si escribimos dos párrafos en la misma línea: ``<p>Un párrafo de texto.</p><p>Otro párrafo.</a>``
+
+Produce este resultado:
+
+Un párrafo de texto.
+
+Otro párrafo.
+
+Si el contenido del párrafo no cabe en una línea será el navegador web quien lo divida en varias líneas según el ancho disponible. Por lo tanto, el número de líneas que ocupe un párrafo dependerá del ancho disponible. Si queremos incluir un salto de línea explícito dentro de un párrafo podemos utilizar la etiqueta \<br />. Como ya hemos dicho, los saltos de línea que escribamos en el código html no tienen efecto al mostrar la página.
+
+Por ejemplo, en este fragmento de código html hay dos párrafos que se pueden ver de forma diferente según el ancho del navegador.
+
+![](https://www.aulaclic.es/html/graficos/parrafo1.png)
+
+Si el ancho es pequeño, el primer párrafo ocupa cuatro líneas.
+
+![](https://www.aulaclic.es/html/graficos/parrafo2.png)
+
+Si el ancho es mayor, el primer párrafo ocupa tres líneas,
+
+![](https://www.aulaclic.es/html/graficos/parrafo3.png)
+
+También podemos ver cómo la línea en blanco que aparece en el código antes de "Es útil ..." y los espacios en blanco detrás de "del tipo Hoja" no se muestran en la página web.
+
+Observa que entre los dos párrafos se crea un salto de línea y además un margen de separación, mientras que en el salto de línea creado con la etiqueta \<br /> no existe ese margen.
+
+Dentro del párrafo se suele introducir texto pero también se pueden incluir otros elementos, como imágenes y elementos de texto (span, em, b, etc.), aunque no se pueden incluir listas y tablas.
+
+* Atributos. Hasta la aparición de la versión HTML 5, existía el atributo align para alinear el contenido del párrafo, con los valores rigth, center, left.
+
+Ejemplo: ``<p align="right">Contenido alineado a la derecha</p>``
+
+<div class="demoWeb">
+     <p align="right">Contenido alineado a la derecha</p>
+   </div>
+
+ 
+
+A partir de HTML 5, se debe alinear el contenido desde la hoja de estilo con el atributo text-align y los valores rigth, center, left, justify, initial, inherit.

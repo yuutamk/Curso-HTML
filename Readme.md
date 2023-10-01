@@ -251,6 +251,12 @@ En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo C
 
 Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
 
+# **Introducción a las Etiquetas HTML y Estructura Básica de una Página Web**<a name="Introduccion-Etiquetas"></a>
+
+**Introducción**
+
+¡Bienvenidos al emocionante mundo de la creación de páginas web! En esta serie de sesiones educativas, te guiaremos a través de los fundamentos de HTML, el lenguaje que se utiliza para construir sitios web. Comenzaremos desde cero y te mostraremos cómo crear tu propia página web. Hoy, en nuestra primera sesión, aprenderemos sobre las etiquetas HTML y la estructura básica de una página web.
+
 ### Etiquetas
 
 Las etiquetas (marcas) delimitan cada uno de los elementos que componen un documento HTML.
@@ -313,6 +319,7 @@ El aspecto del Bloc de Notas es muy simple, una hoja en blanco con una barra de 
 Escribiremos el siguiente código. Más adelante ya veremos qué es cada elemento:
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
  <title>Mi primera página</title>
@@ -322,6 +329,13 @@ Escribiremos el siguiente código. Más adelante ya veremos qué es cada element
 </body>
 </html>
 ```
+
+- `<!DOCTYPE html>`: Declara el tipo de documento.
+- `<html>`: Etiqueta raíz que envuelve toda la página.
+- `<head>`: Contiene metadatos y enlaces a hojas de estilo.
+- `<title>`: Define el título de la página que se muestra en la barra del navegador.
+- `<body>`: Contiene el contenido visible de la página.
+- `<p>`: Etiqueta de párrafo que contiene el texto "Visita mi página".
 
 Una vez escrito, vamos a guardarlo. Pero antes de continuar, debemos de explicar lo que es la extensión de un archivo. La extensión indica de qué tipo es un archivo. La extensión son las tres letras que van después del punto al final del nombre de un archivo (por ejemplo, imagen.gif o documento.doc). Puedes abrir cualquier carpeta para comprobarlo. Si no puedes ver las extensiones, es porque Windows las oculta. Si es tu caso, puedes hacer que las muestre, abre el Explorador de Windows y haz clic en la pestaña Vista, abre Mostrar u ocultar y marca la opción Extensiones de nombre de archivo, tal y como muestra la siguiente imagen.
 
@@ -395,33 +409,44 @@ Otras formas de agrupar el contenido dentro de la página web es con las etiquet
 
 Podríamos decir que las etiquetas \<div> y \<span> son unas etiquetas neutras dentro de la semántica de HTML. Por el contrario, en HTML 5 han surgido nuevas etiquetas semánticas para agrupar el contenido según su significado. Estas nuevas etiquetas a nivel de bloque son, ``section`` para secciones, ``article`` para artículos, ``header`` para cabeceras, ``nav`` para menús, ``footer`` para pies de página y ``aside`` para contenido en el lateral. A nivel de línea o texto tenemos muchas etiquetas semánticas como ``strong``, ``em``, ``cite``. A lo largo del curso iremos viéndolas con detalle.
 
-El uso de estas nuevas etiquetas semánticas no es obligatorio, pero sí recomendable, sobre todo para tener la información mejor estructurada y también para que los buscadores sean capaces de identificar mejor el contenido de nuestra página. Resumiendo, lo recomendable es utilizar las etiquetas semánticas y en los casos en los que no exista una etiqueta semántica apropiada utilizar etiquetas \<div> y \<span>. En la unidad 12 veremos todo esto con más detalle.
+El uso de estas nuevas etiquetas semánticas no es obligatorio, pero sí recomendable, sobre todo para tener la información mejor estructurada y también para que los buscadores sean capaces de identificar mejor el contenido de nuestra página. Resumiendo, lo recomendable es utilizar las etiquetas semánticas y en los casos en los que no exista una etiqueta semántica apropiada utilizar etiquetas \<div> y \<span>.
 
 Otras etiquetas para agrupar y organizar el contenido (texto, imágenes, ...) en formatos estructurados son las listas (ul, ol, li) y las tablas (table, tr, td)
 
-## Introducción a las hojas de estilo CSS
+# UTF-8 <a name="UTF-8"></a>
 
-Un concepto fundamental en una página web es la separación entre el contenido y el formato, actualmente para dar formato al texto se utilizan las hojas de estilo en cascada CSS (Cascading Style Sheets). Es decir, en el archivo .html se escribe el contenido de la página web con etiquetas html, y en el archivo .css se define el estilo o formato del contenido, por ejemplo el color del texto o el tipo de alineación.
 
-En la imagen siguiente podemos ver un ejemplo.
+En el mundo del desarrollo web, la codificación de caracteres es esencial. Para garantizar que tu sitio web pueda mostrar texto en diferentes idiomas y caracteres especiales, necesitas especificar la codificación adecuada. Es aquí donde entra en juego la etiqueta `<meta charset="UTF-8">`.
 
-![](https://www.aulaclic.es/html/graficos/intro_css.png)
 
-En el archivo ejemplo_2_1.html tenemos las etiquetas html y el contenido, y en el archivos ejemplo_2_1.css tenemos la hoja de estilo. El resultado es la página web que se muestra en la parte inferior.
+**UTF-8** es una codificación de caracteres universalmente aceptada que puede representar una amplia gama de caracteres, desde letras y números hasta símbolos y caracteres especiales de diversos idiomas. Esto significa que puedes crear una página web que sea accesible para audiencias de todo el mundo, sin importar qué idioma hablen.
 
-En la hoja de estilo vemos que a la etiqueta **h1** se le ha aplicado el estilo para centrar el texto ``h1 { text-align: center }``, y a la etiqueta **p** se le ha aplicado el estilo para establecer el tipo de letra y el tamaño del texto ``p { (font-family: arial; font-size: 16px; }``, con lo cual a todas las etiquetas p se les aplicarán estos dos estilos.
+## Evitar problemas de visualización
 
-Si en lugar de aplicar un estilo a todas las etiquetas queremos aplicarlo a unas etiquetas en concreto podemos declarar una clase y asignarla sólo a las etiquetas que queramos. En nuestro ejemplo hemos creado la clase .resaltado que pone el texto en color azul, y lo hemos aplicado a una etiqueta concreta: ``<p class="resaltado">Microsoft es la propietaria de Excel.</p>``.
+Si alguna vez has visitado un sitio web y has visto caracteres extraños o símbolos ilegibles en lugar de texto, es probable que el problema estuviera relacionado con la codificación de caracteres. Al utilizar `<meta charset="UTF-8">`, estás asegurando que tu página web se muestre correctamente, independientemente de los idiomas o caracteres especiales que utilices.
 
-En este ejemplo, también vemos que para enlazar un archivo .html con un archivo .css se utiliza la siguiente etiqueta: ``<link rel="stylesheet" type="text/css" href="css/ejemplo_2_1.css" />`` que indica que el archivo enlazado se llama ejemplo_2_1.css que se encuentra en la carpeta css.
 
-La hoja de estilo también se puede declarar en el mismo archivo .html, concretamente dentro de la etiqueta head, como se muestra en esta página básica: Incrustar CSS en HTML . Aunque lo recomendable es hacerlo en otro archivo, como acabamos de explicar.
 
-Las reglas de las hojas de estilo están formadas por el selector y entre llaves las declaraciones separadas por punto y coma. Una declaración es un atributo (propiedad) seguido por dos puntos y a continuación el valor de la propiedad.
+Para asegurarte de que la etiqueta `<meta charset="UTF-8">` surta efecto, colócala en la sección `<head>` de tu documento HTML. Esto es importante porque le dice al navegador qué codificación de caracteres debe utilizar desde el principio.
 
-![Sintaxis CSS](https://www.aulaclic.es/html/graficos/sintaxis_css.svg)
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Otras etiquetas <meta> y contenido del <head> aquí -->
+</head>
+<body>
+    <!-- Contenido de la página aquí -->
+</body>
+</html>
+```
 
-En realidad las hojas de estilo están muy relacionadas con las etiquetas de HTML por lo que deberían explicarse de forma simultánea, aunque por otro lado, es bueno que haya un lugar donde esté agrupada la explicación sobre hojas de estilo. A lo largo del curso iremos viendo más ejemplos del uso de las hojas de estilo al explicar algunas etiquetas, si hay algo que no entiendas de esos ejemplos puedes ir a la unidad 9 para consultar las dudas sobre las hojas de estilo.
+## Comentarios
+
+Los comentarios se utilizan para documentar un código o simpelmente para que el navegador ignore las lineas documentadas.
+
+Para agregar comentarios en un documento debe colocar un signo de admiración seguido de dos guiones, en seguida el comentario y finalice con dos guiones más, ``<!--Coemtnarios-->``
 
 ## Etiqueta \<p><a name="etiqueta-p"></a>
 
@@ -437,9 +462,11 @@ La etiqueta \<p> es de tipo bloque, es decir, por defecto ocupa una línea compl
 
 Produce este resultado:
 
+```
 Un párrafo de texto.
 
 Otro párrafo.
+```
 
 Si el contenido del párrafo no cabe en una línea será el navegador web quien lo divida en varias líneas según el ancho disponible. Por lo tanto, el número de líneas que ocupe un párrafo dependerá del ancho disponible. Si queremos incluir un salto de línea explícito dentro de un párrafo podemos utilizar la etiqueta \<br />. Como ya hemos dicho, los saltos de línea que escribamos en el código html no tienen efecto al mostrar la página.
 
@@ -465,6 +492,7 @@ Dentro del párrafo se suele introducir texto pero también se pueden incluir ot
 
 Ejemplo: ``<p align="right">Contenido alineado a la derecha</p>``
 
+<block>
 <div class="demoWeb">
      <p align="right">Contenido alineado a la derecha</p>
    </div>
@@ -472,3 +500,56 @@ Ejemplo: ``<p align="right">Contenido alineado a la derecha</p>``
  
 
 A partir de HTML 5, se debe alinear el contenido desde la hoja de estilo con el atributo text-align y los valores rigth, center, left, justify, initial, inherit.
+
+## Texto preformateado \<pre>
+
+La etiqueta \<pre> define texto preformateado, es decir, que conserva los espacios y saltos de línea presentes en el código html.
+
+Ejemplo:
+
+``<pre>Aquí hay más   de un espacio
+``
+
+``
+y un salto de línea</pre>``
+
+Produce este resultado:
+
+<pre>Aquí hay  más   de un espacio
+
+y un salto de línea</pre>
+
+Por defecto, el navegador presenta el texto de esta etiqueta en una fuente de la familia monospace (Courier).
+
+Esta etiqueta de utiliza cuando queremos que el navegador muestre los espacios y saltos de línea, como en un poema, datos en forma de tabla, etc. Por ejemplo:
+
+<pre> Semifinal A   Semifinal B
+  	 \          /
+  	  \        / 
+  	   \      /
+  	 Final 15 Julio</pre>
+
+
+## Etiqueta \<blockquote><a name="blockquote"></a>
+La etiqueta ``<blockquote>`` se utiliza para definir un texto o cita que proviene de otra página web. Con el atributo ``cite`` se indica esa página web, aunque este no es visible para el usuario.
+
+Ejemplo:
+
+<blockquote cite="https://www.aulaclic.es/internet/t_4_1.htm"> A veces resulta muy gratificante encontrar algo que ni siquiera sabíamos que existía y que supera nuestras expectativas. Es uno de los motivos por los que Internet engancha a la gente. Es como encontrarse frente a un gigantesco basurero y en la primera patada encontrar un diamante.</blockquote>
+Produce este resultado:
+
+ 
+
+A veces resulta muy gratificante encontrar algo que ni siquiera sabíamos que existía y que supera nuestras expectativas. Es uno de los motivos por los que Internet engancha a la gente. Es como encontrarse frente a un gigantesco basurero y en la primera patada encontrar un diamante.
+bola naranja Atributos: cite valor: URL
+
+2.10. Etiqueta <cite>
+La etiqueta <cite> se utiliza para citar un titulo en una obra creativa (Novela, película, canción, ...) Normalmente los navegadores visualizan la cita en tipo de letra cursiva.
+
+Ejemplo:
+
+<p> El famoso cuadro<cite>Gernika</cite> fue pintado por P. Picasso en 1937.</p>
+
+El famoso cuadro Gernika fue pintado por P. Picasso en 1937.
+
+No hay que confundir esta etiqueta <cite> con el atributo cite que acabamos de ver en la etiqueta <blockquote>.

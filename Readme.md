@@ -535,21 +535,234 @@ La etiqueta ``<blockquote>`` se utiliza para definir un texto o cita que provien
 
 Ejemplo:
 
+```html
 <blockquote cite="https://www.aulaclic.es/internet/t_4_1.htm"> A veces resulta muy gratificante encontrar algo que ni siquiera sabíamos que existía y que supera nuestras expectativas. Es uno de los motivos por los que Internet engancha a la gente. Es como encontrarse frente a un gigantesco basurero y en la primera patada encontrar un diamante.</blockquote>
+```
+
 Produce este resultado:
 
- 
+<blockquote cite="https://www.aulaclic.es/internet/t_4_1.htm"> A veces resulta muy gratificante encontrar algo que ni siquiera sabíamos que existía y que supera nuestras expectativas. Es uno de los motivos por los que Internet engancha a la gente. Es como encontrarse frente a un gigantesco basurero y en la primera patada encontrar un diamante.</blockquote>
 
-A veces resulta muy gratificante encontrar algo que ni siquiera sabíamos que existía y que supera nuestras expectativas. Es uno de los motivos por los que Internet engancha a la gente. Es como encontrarse frente a un gigantesco basurero y en la primera patada encontrar un diamante.
-bola naranja Atributos: cite valor: URL
+* Atributos: cite valor: URL
 
-2.10. Etiqueta <cite>
-La etiqueta <cite> se utiliza para citar un titulo en una obra creativa (Novela, película, canción, ...) Normalmente los navegadores visualizan la cita en tipo de letra cursiva.
+## Etiqueta \<cite><a name="cite"></a>
+La etiqueta ``<cite>`` se utiliza para citar un titulo en una obra creativa (Novela, película, canción, ...) Normalmente los navegadores visualizan la cita en tipo de letra cursiva.
+
+Ejemplo:
+```html
+<p> El famoso cuadro <cite>Gernika</cite> fue pintado por P. Picasso en 1937.</p>
+```
+
+<p> El famoso cuadro <cite>Gernika</cite> fue pintado por P. Picasso en 1937.</p>
+
+No hay que confundir esta etiqueta ``<cite>`` con el atributo ``cite`` que acabamos de ver en la etiqueta ``<blockquote>``.
+
+---
+
+# Tablas<a name="tablas"></a>
+
+¡Hola a todos los entusiastas del desarrollo web!. Nos centraremos en las **Tablas**, las **Listas** y los **Caracteres Especiales**. ¡Prepárate para sumergirte en estos conceptos esenciales con ejemplos claros!
+
+## ¿Qué son las Tablas en HTML?
+
+Imagina que estás creando una página web y deseas mostrar información en forma de filas y columnas, similar a una hoja de cálculo o una tabla en un documento. Aquí es donde entran en juego las tablas en HTML. Una tabla es una estructura rectangular que se compone de filas y columnas, permitiéndote organizar tus datos de manera ordenada y comprensible.
+
+## Conceptos Fundamentales
+
+Las tablas son una excelente manera de organizar datos en tu sitio web. Antes de profundizar en las etiquetas y atributos, es importante entender algunos conceptos clave:
+
+- **Fila:** Una fila en una tabla es como una línea horizontal de celdas. Cada celda contiene información.
+- **Columna:** Una columna es una serie vertical de celdas que comparten el mismo contenido o tipo de datos.
+- **Tabla:** Es la estructura que contiene filas y columnas.
+
+## Creando una Tabla Básica
+
+Para crear una tabla en HTML, utilizamos las etiquetas `<table>`, `<tr>`, `<th>`, y `<td>`. Aquí tienes un ejemplo simple:
+
+```html
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Edad</th>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Maria</td>
+    <td>30</td>
+  </tr>
+</table>
+```
+
+En este ejemplo, `<table>` define la tabla en sí, `<tr>` crea filas, `<th>` se utiliza para encabezados de columna, y `<td>` para datos de la tabla. ¡Así de simple!
+
+### Atributos de Tabla
+
+Los atributos de una tabla permiten personalizar su apariencia. Aquí hay algunos ejemplos:
+
+- **Color:** Cambiar el color de fondo de la tabla.
+- **Bordes (border):** Definir el grosor y estilo de los bordes de las celdas.
+- **Alineación (align):** Alinear la tabla a la izquierda, derecha o centro.
+- **Anchura (width):** Establecer el ancho de la tabla en píxeles o porcentaje.
 
 Ejemplo:
 
-<p> El famoso cuadro<cite>Gernika</cite> fue pintado por P. Picasso en 1937.</p>
+```html
+<table border="1" bgcolor="lightgray" align="center" width="80%">
+   <!-- Filas y celdas de la tabla aquí -->
+</table>
+```
+## Agregando Estilo a tu Tabla
 
-El famoso cuadro Gernika fue pintado por P. Picasso en 1937.
+Para hacer que tu tabla se vea más atractiva, puedes aplicar estilos CSS. Aquí tienes un ejemplo de cómo puedes hacer que tu tabla tenga un aspecto más agradable:
 
-No hay que confundir esta etiqueta <cite> con el atributo cite que acabamos de ver en la etiqueta <blockquote>.
+```html
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+</style>
+```
+
+Con estos estilos, tu tabla se verá mucho más profesional.
+
+## Colspan y Rowspan
+
+Para una mayor flexibilidad, puedes fusionar celdas horizontalmente (`colspan`) o verticalmente (`rowspan`). Esto es útil cuando deseas combinar celdas para formar una única entidad.
+
+Ejemplo:
+
+```html
+<table border="1">
+   <tr>
+       <td>Uno</td>
+       <td colspan="2">Dos y Tres</td>
+   </tr>
+   <tr>
+       <td rowspan="2">Cuatro y Seis</td>
+       <td>Cinco</td>
+       <td>Siete</td>
+   </tr>
+</table>
+```
+
+## Tablas Anidadas
+
+Las tablas también pueden anidarse dentro de otras tablas. Esto es útil cuando deseas organizar datos de manera más avanzada. Aquí tienes un ejemplo:
+
+```html
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Contacto</th>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>
+      <table>
+        <tr>
+          <td>Email: juan@example.com</td>
+          <td>Teléfono: 123-456-7890</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+```
+
+## Listas Numeradas y Viñetas
+
+Las listas son útiles para presentar información de manera ordenada. Hay dos tipos principales: listas numeradas y listas con viñetas.
+
+### Etiquetas de Listas
+
+- `<ul>`: Lista sin numerar (viñetas).
+- `<ol>`: Lista numerada.
+- `<li>`: Elemento de la lista.
+
+Ejemplo:
+
+```html
+<ul>
+   <li>Elemento 1</li>
+   <li>Elemento 2</li>
+   <li>Elemento 3</li>
+</ul>
+
+<ol>
+   <li>Primero</li>
+   <li>Segundo</li>
+   <li>Tercero</li>
+</ol>
+```
+
+
+
+## Etiqueta Marquee: ¡Movimiento en tu Página!
+
+<i>¿Listos para aprender cómo hacer que tu texto se desplace de manera elegante? ¡Comencemos!</i>
+
+¿Qué es la Etiqueta ``<marquee>``?
+La etiqueta ``<marquee>`` en HTML se utiliza para crear efectos de desplazamiento de texto o imágenes en una página web. Es como si tu contenido estuviera en movimiento, lo que puede ser útil para resaltar información importante o simplemente para agregar un toque de dinamismo a tu sitio.
+
+## Creando un Texto en Movimiento
+
+Para usar la etiqueta `<marquee>`, solo necesitas rodear el contenido que deseas que se desplace con esta etiqueta. Veamos un ejemplo simple:
+
+```html
+<marquee>¡Este texto se desplaza de manera automática!</marquee>
+```
+El resultado será un texto que se desplaza horizontalmente de derecha a izquierda en tu página web. ¡Es así de sencillo!
+
+## Personalizando el Desplazamiento
+
+La etiqueta `<marquee>` te permite agregar contenido en movimiento a tu página. Puedes controlar la dirección, el color de fondo, la altura y otros atributos.
+
+Ejemplo:
+
+```html
+<marquee direction="up" scrollamount="3">Texto que sube y baja</marquee>
+```
+
+En este ejemplo, hemos configurado la dirección en "up" para que el texto se desplace hacia arriba y abajo. El atributo `scrollamount` controla la velocidad del desplazamiento.
+
+## Haciendo que el Contenido Sea Interactivo
+
+Si deseas dar a tus usuarios más control sobre el contenido en movimiento, puedes agregar la propiedad `behavior`. Por ejemplo:
+
+```html
+<marquee behavior="alternate" direction="right" scrollamount="2">¡Texto de ida y vuelta!</marquee>
+```
+
+El valor "alternate" hace que el texto se mueva en ambas direcciones, de izquierda a derecha y viceversa, creando un efecto de ida y vuelta.
+
+## Caracteres Especiales
+
+A veces, necesitas mostrar caracteres especiales como acentos o símbolos en tu página. Utiliza códigos especiales para representarlos.
+
+Ejemplo:
+
+```html
+<p>Los caracteres especiales como &aacute;, &eacute;, &iacute;, &oacute;, &uacute; se utilizan para mostrar acentos.</p>
+<p>Los símbolos como &lt; y &gt; se muestran como &lt; y &gt;.</p>
+```
+
+Para un mayor entendimiento revisa la documentacion de este tema haciendo clic 👉👉<a href="./Document/Caracteres especiales.md">aquí</a>👈👈
+

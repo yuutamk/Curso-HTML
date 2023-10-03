@@ -13,14 +13,14 @@
 10. [Etiqueta \<p>](#etiqueta-p)
 11. [Etiqueta \<blockquote>](#blockquote)
 12. [Etiqueta \<blockquote>](#blockquote)
-10. [Etiqueta \<cite>](#cite)
-10. [Tablas](#tablas)
-10. [Imágenes](#imagen)
-10. [Hipervínculos](#hipervinculos)
-10. [Marcos](#marcos)
-10. [Formularios](#formularios)
-10. [Elementos Multimedia](#multimedia)
-10. [Scripts](#scripts)
+13. [Etiqueta \<cite>](#cite)
+14. [Tablas](#tablas)
+15. [Imágenes](#imagen)
+16. [Hipervínculos](#hipervinculos)
+17. [Marcos](#marcos)
+18. [Formularios](#formularios)
+19. [Elementos Multimedia](#multimedia)
+20. [Scripts](#scripts)
 <!-- 10. [Elemento 10](#elemento-10) -->
 
 

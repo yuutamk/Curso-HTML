@@ -405,15 +405,15 @@ En el \<body> encontramos el contenido de la página, lo que se ve a través del
 
 ## Escribiendo texto en el cuerpo de la página
 
-Como estamos diciendo todo el texto de la página estará dentro del **\<body>**, el texto dentro del **\<body>** debe estar, principalmente, dentro de párrafos. En HTML, los párrafos se identifican con la etiqueta ``<p></p>``. Dentro de los párrafos colocaremos texto e imágenes, y algunas etiquetas que nos permitan dar formato al texto. Dentro de un párrafo no debe haber otros párrafos anidados.
+Como estamos diciendo todo el texto de la página estará dentro del **\<body>**, el texto dentro del **\<body>** debe estar, principalmente, dentro de párrafos. En HTML, los párrafos se identifican con la etiqueta `<p></p>`. Dentro de los párrafos colocaremos texto e imágenes, y algunas etiquetas que nos permitan dar formato al texto. Dentro de un párrafo no debe haber otros párrafos anidados.
 
-A su vez, dentro del `**\<body>**, disponemos de encabezados que nos permiten organizar los títulos o rótulos del texto. Los encabezados van desde el ``<h1></h1>`` de mayor tamaño, al ``<h6></h6>``, el más pequeño. Por ejemplo, utilizaríamos un **\<h1>** para poner el rótulo principal de la página, **\<h2>** para los títulos de los apartados, **\<h3>** para los apartados de segundo nivel, etc. El propio texto de cada apartado iría fuera del encabezado contenido en párrafos ``<p></p>`` u otras etiquetas.
+A su vez, dentro del **\<body>**, disponemos de encabezados que nos permiten organizar los títulos o rótulos del texto. Los encabezados van desde el `<h1></h1>` de mayor tamaño, al `<h6></h6>`, el más pequeño. Por ejemplo, utilizaríamos un **\<h1>** para poner el rótulo principal de la página, **\<h2>** para los títulos de los apartados, **\<h3>** para los apartados de segundo nivel, etc. El propio texto de cada apartado iría fuera del encabezado contenido en párrafos `<p></p>` u otras etiquetas.
 
-Una de las peculiaridades del texto, es que los espacios en blanco consecutivos y saltos de línea no se muestran como en el código fuente. Si hay varios espacios seguidos, sólo se mostrará uno. Por ejemplo, si en el código fuente escribimos ``Bienvenido a    Conversa`` se verá Bienvenido a Conversa. Si queremos poner varios espacios seguidos, utilizaremos el código html para el espacio, \&nbsp;
+Una de las peculiaridades del texto, es que los espacios en blanco consecutivos y saltos de línea no se muestran como en el código fuente. Si hay varios espacios seguidos, sólo se mostrará uno. Por ejemplo, si en el código fuente escribimos `Bienvenido a    Conversa` se verá Bienvenido a Conversa. Si queremos poner varios espacios seguidos, utilizaremos el código html para el espacio, **\&nbsp**;
 
-El navegador también ignora los saltos de línea. Así si dentro de un párrafo colocamos varios saltos de línea pulsando Intro, estos no se verán. Para crear un salto de línea dentro de un párrafo, utilizamos la etiqueta \<br />.
+El navegador también ignora los saltos de línea. Así si dentro de un párrafo colocamos varios saltos de línea pulsando Intro, estos no se verán. Para crear un salto de línea dentro de un párrafo, utilizamos la etiqueta `<br />`.
 
-Cada etiqueta ``<p></p>`` lleva implicito un salto de línea.
+Cada etiqueta `<p></p>` lleva implicito un salto de línea.
 
 Veremos con más detalle y ejemplos la etiqueta \<p>, un poco más adelante
 

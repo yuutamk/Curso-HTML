@@ -9,8 +9,20 @@
 6. [IDE Y EDITORES DE CODIGO](#ide-edit)
 7. [Mi primera página web](#primera-web)
 8. [Etiquetas de Texto](#etiquetas-texto)
-9. [Etiqueta \<p>](#etiqueta-p)
+9. [UTF-8](#UTF-8)
+10. [Etiqueta \<p>](#etiqueta-p)
+11. [Etiqueta \<blockquote>](#blockquote)
+12. [Etiqueta \<blockquote>](#blockquote)
+10. [Etiqueta \<cite>](#cite)
+10. [Tablas](#tablas)
+10. [Imágenes](#imagen)
+10. [Hipervínculos](#hipervinculos)
+10. [Marcos](#marcos)
+10. [Formularios](#formularios)
+10. [Elementos Multimedia](#multimedia)
+10. [Scripts](#scripts)
 <!-- 10. [Elemento 10](#elemento-10) -->
+
 
 </details>
 

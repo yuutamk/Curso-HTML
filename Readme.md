@@ -415,7 +415,7 @@ El navegador también ignora los saltos de línea. Así si dentro de un párrafo
 
 Cada etiqueta `<p></p>` lleva implicito un salto de línea.
 
-Veremos con más detalle y ejemplos la etiqueta \<p>, un poco más adelante
+Veremos con más detalle y ejemplos la etiqueta **\<p>**, un poco más adelante
 
 Otras formas de agrupar el contenido dentro de la página web es con las etiquetas \<div> y \<span>. La etiqueta \<div> se utiliza a nivel de bloque y la etiqueta \<span> a nivel de línea o palabras. Estas etiquetas son básicamente contenedores genéricos de contenido. El contenido se escribe entre las etiquetas de apertura y de cierre \<div> contenido \</div>, el criterio para agrupar contenido no está definido estrictamente, por lo tanto podemos utilizarlas para lo que queramos, por ejemplo para dar estilo al contenido.
 
@@ -610,6 +610,8 @@ Para crear una tabla en HTML, utilizamos las etiquetas `<table>`, `<tr>`, `<th>`
 
 En este ejemplo, `<table>` define la tabla en sí, `<tr>` crea filas, `<th>` se utiliza para encabezados de columna, y `<td>` para datos de la tabla. ¡Así de simple!
 
+![Tabla](/src/IMG/Table-view.png)
+
 ### Atributos de Tabla
 
 Los atributos de una tabla permiten personalizar su apariencia. Aquí hay algunos ejemplos:
@@ -655,6 +657,8 @@ Para hacer que tu tabla se vea más atractiva, puedes aplicar estilos CSS. Aquí
 
 Con estos estilos, tu tabla se verá mucho más profesional.
 
+![Alt text](/src/IMG/table-css-view.png)
+
 ## Colspan y Rowspan
 
 Para una mayor flexibilidad, puedes fusionar celdas horizontalmente (`colspan`) o verticalmente (`rowspan`). Esto es útil cuando deseas combinar celdas para formar una única entidad.
@@ -674,6 +678,8 @@ Ejemplo:
    </tr>
 </table>
 ```
+
+![tabla combinada](/src/IMG/tabla-combinada.png)
 
 ## Tablas Anidadas
 
@@ -698,6 +704,7 @@ Las tablas también pueden anidarse dentro de otras tablas. Esto es útil cuando
   </tr>
 </table>
 ```
+![Alt text](/src/IMG/tabla-anidada.png)
 
 ## Listas Numeradas y Viñetas
 
@@ -725,7 +732,7 @@ Ejemplo:
 </ol>
 ```
 
-
+![Alt text](/src/IMG/listas.png)
 
 ## Etiqueta Marquee: ¡Movimiento en tu Página!
 
@@ -741,7 +748,8 @@ Para usar la etiqueta `<marquee>`, solo necesitas rodear el contenido que deseas
 ```html
 <marquee>¡Este texto se desplaza de manera automática!</marquee>
 ```
-El resultado será un texto que se desplaza horizontalmente de derecha a izquierda en tu página web. ¡Es así de sencillo!
+
+<marquee>El resultado será un texto que se desplaza horizontalmente de derecha a izquierda en tu página web. ¡Es así de sencillo!</marquee>
 
 ## Personalizando el Desplazamiento
 

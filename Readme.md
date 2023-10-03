@@ -749,7 +749,7 @@ Para usar la etiqueta `<marquee>`, solo necesitas rodear el contenido que deseas
 <marquee>¡Este texto se desplaza de manera automática!</marquee>
 ```
 
-<marquee>El resultado será un texto que se desplaza horizontalmente de derecha a izquierda en tu página web. ¡Es así de sencillo!</marquee>
+El resultado será un texto que se desplaza horizontalmente de derecha a izquierda en tu página web. ¡Es así de sencillo!
 
 ## Personalizando el Desplazamiento
 
@@ -804,7 +804,11 @@ La sintaxis básica de la etiqueta `<img>` es bastante sencilla. Para insertar u
 <img src="mi-imagen.jpg" alt="Descripción de la imagen">
 ```
 
+
+
 El atributo `alt` se utiliza para proporcionar una descripción de la imagen, lo cual es importante para la accesibilidad y para que los motores de búsqueda entiendan el contenido de la imagen.
+
+
 
 ## Controlando el Tamaño de la Imagen
 
@@ -828,6 +832,17 @@ Ejemplo:
 ```html
 <img src="imagen.jpg" alt="Descripción de la imagen" border="1" align="left">
 ```
+
+```html
+<h6>IMAGENES</h6>
+<p>Explora el poder de HTML5 con estas imágenes:</p>
+<img src="Practics/src/html5.png" width="80" height="80" alt="HTML5">
+<p>HTML5, el corazón de la web moderna.</p>
+<img src="Practics/src/conversa.png" width="120" height="60" alt="Conversa">
+<p>Creado por Yuuta Senpai</p>
+```
+
+![imagenes](/src/IMG/view-image.png)
 
 ## Imágenes Responsivas
 
@@ -887,10 +902,10 @@ Las referencias URL relativas son un método inteligente para definir enlaces a 
 
 ## En el Mismo Directorio
 
-Supongamos que tienes una estructura de directorios y archivos como la que se muestra en el servidor www.aulaclic.es:
+Supongamos que tienes una estructura de directorios y archivos como la que se muestra en el servidor www.conversa.com.mx:
 
 ```
-www.aulaclic.es
+www.conversa.com.mx
 ├── windows-10
 │   ├── menu.htm
 │   ├── escritorio.htm

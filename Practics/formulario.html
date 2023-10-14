@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+<p>
+    El profesor "Inserte nombre registrado" de la escuela de natación "Continentes"
+</p>
+    <p>
+        <img src="src/foto.jpg" alt="yuuta senpai" width="250" height="300">
+    </p>
+    <p>
+        Te invita a elegir las actividades para este verano 
+    </p>
+    <p>
+        elige de la siguiente lista alguna activida y escribelo en el recuadro de abajo para enviarle la informacion al area administrativa.
+    </p>
+    <ul>
+        <li>Natación de 2 hrs</li>
+        <li>Natación para niños 1 hr</li>
+        <li>Gimnasio 1 hr + Natación 1 hr</li>
+        <li>Gimnasion 2 hrs</li>
+        <li>AcuaGym 1 hr</li>
+        <li>Juegos acuaticos para niños 1 hr</li>
+    </ul>
+    <form action="Continentes.asp" method="get">
+        <input list="actividades" name="Activities">
+        <datalist id="actividades">
+            <option value="Natación"></option>
+            <option value="Gimnasio + Natación"></option>
+            <option value="Gimnasio"></option>
+            <option value="AcuaGym"></option>
+            <option value="Juegos acuaticos para niños"></option>
+            <option value="Natación para niños"></option>
+        </datalist>
+        <p>
+            Seleccionar la fecha de inicio para las actividades:
+            <p><input type="date" name="fechaInicio"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </p>
+    </form>
+    
+    <p>
+        Cotiza tus actividades
+    </p>
+    <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">1
+    <input type="range" min=1 max=6 id="a" value="6">6 * costo por actividad en pesos $
+    <input type="number" id="b" value="120">= $ <output name="x" for="a b"></output>
+    </form>
+  <p>
+    <b>Nota:</b> El datalist y el output no es soportado por Internet Explorer y otras versiones de Safari
+  </p>
+</body>
+</html>

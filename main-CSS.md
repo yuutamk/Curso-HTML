@@ -448,3 +448,90 @@ El **padding** define el espacio entre el contenido y el borde. Aquí tienes un 
 ```
 
 En este ejemplo, hemos creado una caja con un relleno de 10px. Este espacio rodea el contenido dentro del borde. También hemos agregado un borde y un color de fondo para ilustrar cómo funciona el **padding** en relación con el contenido.
+
+### **Cálculo de la Anchura y Altura en CSS**
+
+El cálculo de la anchura y altura en CSS es un pilar fundamental para cualquier diseño web. Pero, ¿sabías que estos valores no siempre son lo que parecen? Veámoslo a través de un ejemplo:
+
+Imagina que tienes un div con las siguientes propiedades:
+
+```css
+div {
+  width: 200px;
+  border-width: 5px;
+  padding: 20px;
+  margin: 100px;
+}
+```
+
+¿Cuál crees que es el ancho total de este div? La respuesta no es tan evidente como parece. En realidad, deberías sumar el contenido, el relleno, el borde y el margen. Esto nos lleva a un ancho total de 450px. Para simplificar este proceso, utilizamos la propiedad `box-sizing`. Echemos un vistazo a esta propiedad.
+
+### **La Propiedad `box-sizing` al Rescate**
+
+La propiedad `box-sizing` en CSS te permite controlar cómo se calculan las dimensiones de un elemento. Tiene dos valores clave: `content-box` y `border-box`. Aquí hay un ejemplo que ilustra la diferencia:
+
+- `content-box`: En este caso, el ancho se calcula considerando solo el contenido, no el relleno ni el borde.
+
+```css
+div {
+  box-sizing: content-box;
+  width: 200px;
+  border-width: 5px;
+  padding: 20px;
+  margin: 100px;
+}
+```
+
+El ancho total sigue siendo 450px, ya que el contenido, el relleno, el borde y el margen no se mezclan.
+
+- `border-box`: Con este valor, el ancho se calcula teniendo en cuenta el contenido, el relleno y el borde.
+
+```css
+div {
+  box-sizing: border-box;
+  width: 200px;
+  border-width: 5px;
+  padding: 20px;
+  margin: 100px;
+}
+```
+
+El ancho total en este caso es de 400px, ya que el contenido, el relleno, el borde y el margen se combinan en un solo valor. ¡Sencillez y precisión!
+
+**Sección 3: Controlando el Desbordamiento con `overflow`**
+
+El desbordamiento de contenido puede ser un problema común en el diseño web. Para manejarlo, utilizamos la propiedad `overflow`. Veamos los cuatro valores posibles:
+
+- `visible`: El contenido desbordante se superpone al siguiente elemento.
+
+```css
+div {
+  overflow: visible;
+}
+```
+
+- `hidden`: El contenido desbordante se oculta.
+
+```css
+div {
+  overflow: hidden;
+}
+```
+
+- `scroll`: Se muestran barras de desplazamiento para explorar el contenido desbordante.
+
+```css
+div {
+  overflow: scroll;
+}
+```
+
+- `auto`: Barras de desplazamiento aparecen solo cuando es necesario.
+
+```css
+div {
+  overflow: auto;
+}
+```
+
+Dominar el Modelo de Caja CSS y el control del desbordamiento es esencial para el diseño web. Con ejemplos claros y prácticos, te hemos mostrado cómo entender y aplicar estos conceptos. Ahora, estás listo para crear diseños web atractivos y funcionales. ¡Sigue aprendiendo y diseñando!

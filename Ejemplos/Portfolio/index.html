@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi portafolio">
+    <link rel="shortcut icon" href="./assets/ico/icon-sofi.ico" type="image/x-icon">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Mi pagina</title>
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <a href="#">
+                <img class="header__logo--img" src="./assets/ico/pingu-sofi.ico" alt="logo">
+                <h2>Alek Posadas</h2>
+            </a>
+           
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Alek Posadas</h1>
+                <h3>Frontend developer</h3>
+            </div>
+            <img src="./assets/img/foto.jpg" alt="">
+        </section>
+        <section class="skill">
+            <h2>Skills</h2>
+            <div class="card">
+                <iconify-icon icon="logos:html-5" width="50"></iconify-icon>
+                <h3>HTML</h3>
+            </div>
+            <div class="card">
+                <iconify-icon icon="logos:css-3" width="50"></iconify-icon>
+                <h3>CSS</h3>
+            </div>
+            <div class="card">
+                <iconify-icon icon="vscode-icons:file-type-js-official" width="50"></iconify-icon>
+                <h3>JavaScript</h3>
+            </div>
+        </section>
+        <section class="contacto">
+            <form action="">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Escribe tu Nombre">
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" placeholder="Tu correo electrónico" id="">
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>            
+    </main>
+    <footer>
+        <div class="logo">
+            <a href="#">
+                <img class="header__logo--img" src="./assets/ico/neko.ico" alt="logo">
+                <h2>Alek Posadas</h2>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Acerca de mi</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Referencias</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <iconify-icon icon="devicon:github" width="50"></iconify-icon>
+            <iconify-icon icon="devicon:linkedin" width="50"></iconify-icon>
+            <iconify-icon icon="skill-icons:twitter" width="50"></iconify-icon>
+        </div>
+    </footer>
+</body>
+</html>

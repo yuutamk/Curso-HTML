@@ -4,79 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mi portafolio">
+    
+    <!-- Importar iconos -->
     <link rel="shortcut icon" href="./assets/ico/icon-sofi.ico" type="image/x-icon">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- stilos css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    
     <title>Mi pagina</title>
 </head>
 <body>
-    <header>
-        <div class="header__logo">
-            <a href="#">
-                <img class="header__logo--img" src="./assets/ico/pingu-sofi.ico" alt="logo">
-                <h2>Alek Posadas</h2>
+    <header class="header">
+            <a href="#" class="header__link">
+                <img class="header__img" src="./assets/ico/pingu-sofi.ico" alt="logo">
+                <h2 class="header__text">Alek Posadas</h2>
             </a>
-           
-        </div>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
+            <ul class="menu__list">
+                <li class="menu__link"><a href="#">Skills</a></li>
+                <li class="menu__link"><a href="#">Portfolio</a></li>
+                <li class="menu__link"><a href="#">Contacto</a></li>
             </ul>    
         </nav>
     </header>
     <main>
         <section class="hero">
-            <div>
-                <h1>Alek Posadas</h1>
-                <h3>Frontend developer</h3>
+            <div class="hero__container">
+                <h1 class="hero__titulo">Alek Posadas</h1>
+                <h3 class="hero__description">Frontend developer</h3>
             </div>
-            <img src="./assets/img/foto.jpg" alt="">
+            <img class="hero__image" src="./assets/img/foto.jpg" alt="foto de perfil">
         </section>
+
+        <section class="aboutme">
+            <div class="about__container">
+                <h2 class="about__titulo">I love what I do 😁💓</h2>
+                <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur tenetur obcaecati ad distinctio at ab laboriosam harum consequatur et maiores sunt vel blanditiis, facilis quibusdam facere? Fugiat, aut animi?</p>
+                <div class="about__social">
+                    <iconify-icon class="about__icon" icon="skill-icons:instagram"></iconify-icon>
+                    <iconify-icon class="about__icon"  icon="logos:twitter"></iconify-icon>
+                    <iconify-icon class="about__icon"  icon="entypo-social:github" style="color: #071952;"></iconify-icon>
+                </div>
+            </div>
+            
+            <div class="about__media">
+                <img src="./assets/img/foto-sin-fondo.png" alt="" class="about__image">
+            </div>
+        </section>
+
         <section class="skill">
-            <h2>Skills</h2>
+            <h2 class="skills__titulo">Skills</h2>
             <div class="card">
-                <iconify-icon icon="logos:html-5" width="50"></iconify-icon>
-                <h3>HTML</h3>
+                <iconify-icon class="card__icon" icon="logos:html-5" width="50"></iconify-icon>
+                <h3 class="card__description">HTML</h3>
             </div>
             <div class="card">
-                <iconify-icon icon="logos:css-3" width="50"></iconify-icon>
-                <h3>CSS</h3>
+                <iconify-icon class="card__icon" icon="logos:css-3" width="50"></iconify-icon>
+                <h3 class="card__description">CSS</h3>
             </div>
             <div class="card">
-                <iconify-icon icon="vscode-icons:file-type-js-official" width="50"></iconify-icon>
-                <h3>JavaScript</h3>
+                <iconify-icon class="card__icon" icon="vscode-icons:file-type-js-official" width="50"></iconify-icon>
+                <h3 class="card__description">JavaScript</h3>
             </div>
         </section>
         <section class="contacto">
-            <form action="">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" placeholder="Escribe tu Nombre">
-                <label for="email">Correo electrónico</label>
-                <input type="email" name="email" placeholder="Tu correo electrónico" id="">
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                <input type="submit" value="Enviar">
+            <form class="formulario" action="">
+                <label class="formulario__label" for="name">Nombre</label>
+                <input class="formulario__input" id="name" type="text" name="name" placeholder="Escribe tu Nombre">
+                <label class="formulario__label" for="email">Correo electrónico</label>
+                <input class="formulario__input" id="email" type="email" name="email" placeholder="Tu correo electrónico" id="">
+                <label class="formulario__label" for="message">Mensaje</label>
+                <textarea class="formulario__textarea" id="message" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                <input class="formulario__btn" type="submit" value="Enviar">
             </form>
         </section>            
     </main>
-    <footer>
-        <div class="logo">
-            <a href="#">
-                <img class="header__logo--img" src="./assets/ico/neko.ico" alt="logo">
-                <h2>Alek Posadas</h2>
+    <footer class="footer">
+        <div class="footer__container footer__container--logo">
+            <a class="footer__link" href="#">
+                <img class="footer__img" src="./assets/ico/neko.ico" alt="logo">
+                <h2 class="footer__logo">Alek Posadas</h2>
         </div>
-        <div class="links">
-            <ul>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Referencias</a></li>
+        <div  class="footer__container footer__container--links">
+            <ul class="footer__list">
+                <li class="footer__link"><a href="#">Acerca de mi</a></li>
+                <li class="footer__link"><a href="#">Contacto</a></li>
+                <li class="footer__link"><a href="#">Referencias</a></li>
             </ul>
         </div>
-        <div class="social">
-            <iconify-icon icon="devicon:github" width="50"></iconify-icon>
-            <iconify-icon icon="devicon:linkedin" width="50"></iconify-icon>
-            <iconify-icon icon="skill-icons:twitter" width="50"></iconify-icon>
+        <div class="footer__container footer__container--social">
+            <iconify-icon class="footer__icon" icon="devicon:github" width="50"></iconify-icon>
+            <iconify-icon class="footer__icon" icon="devicon:linkedin" width="50"></iconify-icon>
+            <iconify-icon class="footer__icon" icon="skill-icons:twitter" width="50"></iconify-icon>
         </div>
     </footer>
 </body>

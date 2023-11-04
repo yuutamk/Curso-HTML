@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: #000000bd;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+
+.header__link{
+    display: flex;
+
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__img{
+    width: 9rem;
+}
+
+.header__text{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+
+
+.menu__list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10rem;
+}
+
+.menu__link{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.menu__link a{
+    color: rgb(255, 255, 255);
+}

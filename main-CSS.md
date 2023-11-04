@@ -29,31 +29,6 @@ Las reglas de las hojas de estilo están formadas por el selector y entre llaves
 
 Puedes tener múltiples declaraciones dentro de un conjunto de llaves, y se separan por punto y coma. Los comentarios en CSS se inician con `/*` y se cierran con `*/`.
 
-
-### Reglas de arroba
-
-CSS también incluye reglas especiales que comienzan con el símbolo "@". Algunas de las más utilizadas son:
-
-1. `@charset`: Define la codificación de caracteres en la hoja de estilo.
-2. `@import`: Importa una hoja de estilo dentro de otra.
-3. `@media`: Define reglas específicas para diferentes tipos de medios, como pantallas, impresoras y más.
-
-### Media Queries
-
-Las Media Queries son una característica emocionante de CSS3 que nos permite adaptar el diseño de una página web a diferentes dispositivos y tamaños de pantalla. Esto es crucial para garantizar que tu sitio se vea bien en una variedad de dispositivos, desde computadoras de escritorio hasta teléfonos móviles.
-
-Las Media Queries permiten detectar el tipo de dispositivo y sus características, como ancho, altura y orientación, y aplicar reglas específicas en consecuencia. Por ejemplo, si la pantalla es pequeña, puedes ajustar el tamaño de la fuente para que sea más legible.
-
-```css
-@media screen and (max-width: 640px) {
-  body {
-    font-size: 16px;
-  }
-}
-```
-
-Este hechizo CSS dice: "Si la pantalla es de ancho igual o menor a 640 píxeles, entonces aumenta el tamaño de fuente del cuerpo a 16 píxeles". ¡Tu página web se adaptará automáticamente a dispositivos más pequeños!
-
 ### Tipos de Selectores
 
 Los selectores son esenciales para aplicar reglas de estilo a elementos HTML. Aquí hay algunos tipos de selectores comunes:
@@ -98,7 +73,284 @@ p.clase1 {
 
 Esto hará que todos los elementos con la clase `clase1` sean azules y los párrafos con esta clase se volverán itálicos.
 
-#### 4. Selectores de pseudoclases
+
+
+#### 5. Selectores de hermanos
+
+Puedes seleccionar elementos que son hermanos de otros elementos. Hay varios tipos de selectores de hermanos, como `~` (hermano) y `+` (hermano contiguo). Por ejemplo:
+
+```css
+div ~ p {
+    color: red;
+}
+
+div + p {
+    color: blue;
+}
+```
+
+El primer selector se aplicará a todos los párrafos que son hermanos de un `div`, mientras que el segundo se aplicará solo al primer párrafo hermano contiguo a un `div`.
+
+
+## Atributos más comunes
+
+### Margen y Relleno (Margin y Padding)
+
+Supongamos que estás decorando una habitación. El **margen** sería como el espacio libre alrededor de tus muebles, mientras que el **relleno** sería como los cojines que hacen que tus muebles sean más cómodos. En CSS, estos dos conceptos son similares.
+
+
+
+- **margin**: Establece el espacio alrededor de un elemento.
+- **padding**: Establece el espacio dentro de un elemento.
+
+
+En CSS, utilizamos **valores** para definir propiedades que afectan el aspecto y el diseño de nuestros elementos HTML. Estos valores son como las herramientas en tu caja de pintura que te permiten dar vida a tu sitio web.
+
+- **Unidades de Medida (px, %)**: Puedes especificar el tamaño de elementos usando píxeles (px) o porcentaje (%).
+
+```css
+div {
+    margin: 20px;
+    padding: 10px;
+}
+```
+
+
+```css
+p {
+    font-size: 16px; /* Tamaño de fuente en píxeles */
+    width: 50%; /* Ancho del elemento en porcentaje del contenedor */
+}
+```
+
+### Ejemplo:
+
+```html
+<div>
+    ¡Este es un cuadro con margen y relleno!
+</div>
+```
+
+### Color (Color)
+
+En el emocionante mundo del diseño web, los colores son como pinceles que dan vida a tu obra maestra digital. ¿Sabías que en CSS tienes una variedad de formas para definir esos colores? ¡Vamos a explorar algunas de las opciones disponibles!
+
+¡Añadir color a tu página es genial! Elige entre millones de colores y da vida a tus elementos.
+
+- **color**: Define el color del texto.
+- **background-color**: Establece el color de fondo de un elemento.
+
+```css
+p {
+    color: blue;
+    background-color: yellow;
+}
+```
+
+### 1. **Colores en Hexadecimal**
+
+Comencemos con un clásico: los valores hexadecimales. Estos códigos de 6 dígitos son como el ADN de un color. Por ejemplo, `#FF0000` representa el rojo puro. ¿Quieres darle a tu encabezado un toque de pasión? ¡Prueba esto!
+
+```css
+h1 {
+    color: #FF0000; /* Este texto es rojo apasionado. */
+}
+```
+
+### 2. **Colores en RGB**
+
+Si te gustan los números, puedes expresar tus colores en términos de valores Red (rojo), Green (verde) y Blue (azul). ¿Eres fan del verde bosque? Así es como lo haces:
+
+```css
+p {
+    color: rgb(0, 128, 0); /* ¡Este texto es verde bosque! */
+}
+```
+
+### 3. **Colores en Nombres**
+
+¿Prefieres un enfoque más intuitivo? CSS te permite utilizar nombres de colores predefinidos. Por ejemplo, `red` es rojo y `blue` es azul. ¡Es fácil como el ABC!
+
+```css
+a {
+    color: blue; /* Este enlace es azul. */
+}
+```
+
+### 4. **Colores en HSL**
+
+La HSL (Hue, Saturation, Lightness) es como el control de tono, saturación y brillo de una pintura. ¿Quieres un amarillo brillante? Echa un vistazo:
+
+```css
+span {
+    color: hsl(60, 100%, 50%); /* Este texto es amarillo brillante. */
+}
+```
+
+### 5. **Colores en RGBA y HSLA**
+
+¿Necesitas transparencia? CSS te tiene cubierto con valores RGBA y HSLA. Puedes ajustar la opacidad con un cuarto valor. Por ejemplo:
+
+```css
+div {
+    background-color: rgba(255, 0, 0, 0.5); /* Este fondo es rojo semitransparente. */
+}
+```
+
+### 6. **Colores en Gradients**
+
+Si buscas un aspecto más sofisticado, los degradados son tu mejor amigo. Puedes crear transiciones suaves entre colores o incluso hacerlos deslumbrar con gradientes radiales.
+
+```css
+button {
+    background: linear-gradient(to right, #FF5733, #6B4226); /* ¡Un botón con un degradado emocionante! */
+}
+```
+
+
+
+### Ejemplo:
+
+```html
+<p>Este es un texto en azul con fondo amarillo.</p>
+```
+
+### Tamaño (Width y Height)
+
+¿Quieres cambiar el tamaño de tus elementos? ¡Es fácil! Puedes ajustar el ancho y el alto como prefieras.
+
+- **width**: Establece el ancho de un elemento.
+- **height**: Define la altura de un elemento.
+
+```css
+img {
+    width: 200px;
+    height: 150px;
+}
+```
+
+### Ejemplo:
+
+```html
+<img src="imagen.jpg" alt="Una imagen" />
+```
+- **Unidades de Medida (px, %)**: Puedes especificar el tamaño de elementos usando píxeles (px) o porcentaje (%).
+
+```css
+p {
+    font-size: 16px; /* Tamaño de fuente en píxeles */
+    width: 50%; /* Ancho del elemento en porcentaje del contenedor */
+}
+```
+
+### Cambio del Color de Fondo con `background-color`
+
+Imagina que tienes un lienzo en blanco y quieres pintarlo de un color específico. Con CSS, puedes hacerlo utilizando la propiedad `background-color`. 
+
+#### Ejemplo:
+
+```css
+body {
+    background-color: #87CEEB; /* Fondo celeste para toda la página */
+}
+```
+
+### Control de Repeticiones de Fondo
+
+A veces, quieres que tu fondo se repita horizontal o verticalmente para cubrir todo el espacio. CSS te permite hacerlo con las propiedades `background-repeat` y `background-size`.
+
+#### Control de Repetición Horizontal con `repeat-x`
+
+```css
+div {
+    background-image: url('patron-horizontal.png'); /* Imagen de fondo */
+    background-repeat: repeat-x; /* Se repite solo horizontalmente */
+}
+```
+
+#### Control de Repetición Vertical con `repeat-y`
+
+```css
+div {
+    background-image: url('patron-vertical.png'); /* Imagen de fondo */
+    background-repeat: repeat-y; /* Se repite solo verticalmente */
+}
+```
+
+### Fuente (Font-Family)
+
+Elegir la fuente correcta puede hacer que tu página se vea más elegante o más divertida.
+
+- **font-family**: Cambia la fuente de texto de un elemento.
+
+```css
+h1 {
+    font-family: "Comic Sans MS", cursive;
+}
+```
+
+- **Palabras Clave**: Algunas propiedades, como `font-weight`, utilizan palabras clave como `bold` o `normal`.
+
+```css
+strong {
+    font-weight: bold; /* Texto en negritas */
+}
+
+### Ejemplo:
+
+```html
+<h1>¡Hola, mundo!</h1>
+```
+
+### Opacidad (Opacity)
+
+¿Quieres que un elemento sea un poco transparente? Puedes jugar con la opacidad.
+
+- **opacity**: Define la transparencia de un elemento.
+
+```css
+div {
+    opacity: 0.5;
+}
+```
+
+### Ejemplo:
+
+```html
+<div>
+    Soy un poco transparente.
+</div>
+```
+
+----
+
+## Pseudo clases
+
+### Efecto Hover (Hover)
+
+¡Este es uno de los trucos más divertidos! Puedes hacer que tus elementos cambien cuando alguien pasa el mouse sobre ellos.
+
+```css
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+```
+
+### Ejemplo:
+
+```html
+<a href="#">Pasa el mouse sobre mí</a>
+```
+
+
+
+
+
+
+---
+
+####  Selectores de pseudoclases
 
 Las pseudoclases se utilizan para aplicar estilos a elementos en estados específicos. Por ejemplo:
 
@@ -118,25 +370,7 @@ div:hover {
 
 Esto cambiará el color de los enlaces cuando se hacen clic, los encabezados `h2` cuando se pasa el mouse sobre ellos y el fondo de un `div` cuando se pasa el mouse sobre él.
 
-#### 5. Selectores de hermanos
-
-Puedes seleccionar elementos que son hermanos de otros elementos. Hay varios tipos de selectores de hermanos, como `~` (hermano) y `+` (hermano contiguo). Por ejemplo:
-
-```css
-div ~ p {
-    color: red;
-}
-
-div + p {
-    color: blue;
-}
-```
-
-El primer selector se aplicará a todos los párrafos que son hermanos de un `div`, mientras que el segundo se aplicará solo al primer párrafo hermano contiguo a un `div`.
-
----
-
-# Pseudoclases.Estilos de los hiperenlaces.
+### Pseudoclases, Estilos de los hiperenlaces.
 
 Por defecto un hiperenlace se muestra subrayado y en color azul, sin embargo lo más común es cambiar estos estilos para adaptarlos al diseño de la página. Para hacerlo disponemos de las hojas de estilos y las pseudoclases.
 
@@ -323,6 +557,193 @@ Esto mantiene tus estilos separados del HTML y facilita la reutilización.
 
 Recuerda, la elección es tuya. ¡Elige sabiamente tu forma de conjurar tus estilos!
 
+### Estilo de Borde
+
+Los bordes en CSS son como los marcos que rodean tus elementos HTML, ¡pueden darles un aspecto completamente nuevo! Comencemos explorando cómo cambiar el estilo de los bordes con la propiedad `border-style`.
+
+### Cambio del Tipo de Borde con `border-style`
+
+Puedes definir el tipo de borde que deseas para tus elementos, ya sea un borde punteado, un borde sólido o incluso un borde oculto. Aquí tienes algunos ejemplos:
+
+```css
+div {
+    border-style: dotted; /* Borde punteado */
+}
+
+p {
+    border-style: solid; /* Borde sólido */
+}
+
+a {
+    border-style: hidden; /* Borde oculto (invisible) */
+}
+```
+
+## Grosor de Borde
+
+No solo puedes cambiar el estilo de los bordes, sino también su grosor. La propiedad `border-width` te permite especificar cuán grueso o delgado deseas que sea el borde.
+
+### Control del Grosor de Borde con `border-width`
+
+```css
+button {
+    border-width: 2px; /* Borde de 2 píxeles de grosor */
+}
+
+input {
+    border-width: 5px; /* Borde de 5 píxeles de grosor */
+}
+
+img {
+    border-width: 1px; /* Borde de 1 píxel de grosor */
+}
+```
+
+## Bordes Predefinidos
+
+Si no quieres especificar un grosor exacto, puedes utilizar valores predefinidos como "fino", "medio" o "grueso" para asignar bordes en CSS.
+
+### Utilización de Bordes Predefinidos
+
+```css
+h1 {
+    border-width: thin; /* Borde fino */
+}
+
+h2 {
+    border-width: medium; /* Borde medio */
+}
+
+h3 {
+    border-width: thick; /* Borde grueso */
+}
+```
+
+## Redondeo de Bordes
+
+¿Quieres que tus bordes tengan un toque especial? La propiedad `border-radius` te permite redondear los bordes de los elementos, dándoles un aspecto más suave.
+
+### Redondeo de Bordes con `border-radius`
+
+```css
+div {
+    border-radius: 10px; /* Bordes redondeados con un radio de 10 píxeles */
+}
+
+button {
+    border-radius: 20%; /* Bordes redondeados con un radio del 20% del tamaño del elemento */
+}
+
+p {
+    border-radius: 50px 20px; /* Bordes redondeados con radios distintos para las esquinas */
+}
+```
+### Filtros de Imagen
+
+Ahora, profundicemos en algunos filtros de imagen comunes que puedes aplicar a tus elementos en CSS.
+
+### Saturación
+
+La saturación es como el botón de color en tu televisor. Puedes aumentar o disminuir la saturación de una imagen para que se vea más o menos vibrante.
+
+```css
+img {
+    filter: saturate(200%); /* Aumenta la saturación al 200% */
+}
+
+div {
+    filter: saturate(50%); /* Disminuye la saturación al 50% */
+}
+```
+
+### Escala de Grises
+
+El filtro `grayscale` convierte una imagen a blanco y negro, como en las películas antiguas. Puedes ajustar el valor para controlar el grado de blanco y negro.
+
+```css
+img {
+    filter: grayscale(100%); /* Convierte la imagen completamente a blanco y negro */
+}
+
+div {
+    filter: grayscale(50%); /* Hace que la imagen sea parcialmente en blanco y negro */
+}
+```
+
+### Brillo
+
+¿Quieres que tu imagen brille como una estrella? Con el filtro `brightness`, puedes aumentar o disminuir el brillo de una imagen.
+
+```css
+img {
+    filter: brightness(150%); /* Aumenta el brillo al 150% */
+}
+
+div {
+    filter: brightness(50%); /* Disminuye el brillo al 50% */
+}
+```
+
+
+
+### Uso de CSS transforms
+
+Al modificar las coordenadas del espacio, las transformaciones CSS permiten cambiar la posición del contenido afectado sin interrumpir el flujo normal. Se implementan haciendo uso de un conjunto de propiedades CSS que permiten aplicar transformaciones lineales a elementos HTML. Estas transformaciones incluyen rotar, torcer, escalar y desplazar en plano o en un espacio 3D.
+
+### Propiedades de las transformaciones CSS
+
+Se usan dos propiedades principalmente para definir las transformaciones CSS: `transform` y `transform-origin`
+
+`transform-origin`
+
+Especifica la posición de origen que se usará para la transformación. Por defecto es el lado superior izquierdo del elemento. Esta posición es usada por varias transformaciones como rotar, escalar o torcer ya que necesitan de este punto especifico como parámetro.
+
+`transform`
+Especifica la transformación a realizar sobre el elemento. Se define como una lista separada por espacios de transformaciones que se aplican en orden una después de la otra, tal y como es requerido por la operación de composición.
+
+### Ejemplos
+Esta es una imagen inalterada del logo de MDN:
+
+![MDN Logo](https://developer.mozilla.org/es/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/logo.png)
+
+### Ejemplo: Rotando
+Aquí está el logo MDN en un iframe rotado 90 grados desde su esquina inferior izquierda.
+
+```HTML
+<img
+  style="transform: rotate(90deg);
+            transform-origin: bottom left;"
+  src="logo.png" />
+```
+<img
+  style="transform: rotate(90deg);
+            transform-origin: bottom left;"
+  src="https://developer.mozilla.org/es/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/logo.png" />
+<br>
+<br>
+<br>
+<!-- <br> 
+<br> -->
+
+### Ejemplo: Torciendo y desplazando
+Aquí está el logo MDN torcido 10 grados y desplazado 150 pixels en el eje X.
+
+```HTML
+<img
+  style="transform: skewx(10deg) translatex(150px);
+            transform-origin: bottom left;"
+  src="logo.png" />
+```
+<img
+  style="transform: skewx(10deg) translatex(150px);
+            transform-origin: bottom left;"
+  src="https://developer.mozilla.org/es/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/logo.png" />
+
+
+
+
+-----
+
 ## Orden de Aplicación: La Resolución de Colisiones
 
 Los estilos son como encantamientos mágicos que pueden chocar. La **resolución de colisiones** es vital. Hay tres reglas a seguir:
@@ -378,6 +799,9 @@ table {
 La idea es que no querrás un borde alrededor de toda tu página web cuando defines un borde en el `<body>`. En cambio, esta propiedad se utiliza para crear un borde alrededor de la página en sí, no de todos los elementos dentro de ella.
 
 ¡Es hora de tomar el control de tus estilos y elegir qué atributos deseas heredar y cuáles prefieres definir directamente en tus etiquetas!
+
+
+-------------
 
 # Modelo de Caja en CSS
 
@@ -535,3 +959,50 @@ div {
 ```
 
 Dominar el Modelo de Caja CSS y el control del desbordamiento es esencial para el diseño web. Con ejemplos claros y prácticos, te hemos mostrado cómo entender y aplicar estos conceptos. Ahora, estás listo para crear diseños web atractivos y funcionales. ¡Sigue aprendiendo y diseñando!
+
+
+### ¿Qué es Flexbox?
+
+Flexbox es como una varita mágica que hace que tus elementos HTML se alineen y se distribuyan de manera armoniosa en el espacio. Imagina que tienes una caja llena de elementos y quieres organizarlos de una manera ordenada y flexible. ¡Flexbox te permite hacerlo de manera sencilla!
+
+## La Propiedad `flex`
+
+La propiedad `flex` es la clave del poder de Flexbox. Con esta propiedad, puedes controlar cómo un elemento ocupa el espacio disponible y cómo se redimensiona para adaptarse a las diferentes pantallas y dispositivos.
+
+### ¡Exploremos Algunos Ejemplos!
+
+#### Ejemplo 1: Distribución Equitativa
+
+Imagina que tienes tres cajas y deseas que ocupen el espacio horizontal disponible de manera equitativa. La propiedad `flex` es tu amiga aquí.
+
+```css
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+}
+```
+
+Con este código, cada caja dentro del contenedor se expandirá para llenar el espacio horizontal de manera equitativa. ¡Magia, verdad?
+
+#### Ejemplo 2: Tamaño Flexible
+
+¿Qué pasa si quieres que una caja sea el doble de ancha que las demás? ¡Flexbox lo hace fácil!
+
+```css
+.container {
+    display: flex;
+}
+
+.box {
+    flex: 1; /* Todas las cajas ocupan el mismo espacio */
+}
+
+.box.special {
+    flex: 2; /* Esta caja es el doble de ancha */
+}
+```
+
+En este caso, las cajas con la clase `.special` serán el doble de anchas que las demás. ¡Flexbox te da el control!

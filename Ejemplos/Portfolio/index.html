@@ -21,7 +21,8 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/about.css">
-    
+    <link rel="stylesheet" href="./styles/skills.css">
+
     <title>Mi pagina</title>
 </head>
 <body>
@@ -32,24 +33,27 @@
             </a>
         <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__link"><a href="#">Skills</a></li>
-                <li class="menu__link"><a href="#">Portfolio</a></li>
-                <li class="menu__link"><a href="#">Contacto</a></li>
+                <li class="menu__link"><a href="#skills">Skills</a></li>
+                <li class="menu__link"><a href="#about">Portfolio</a></li>
+                <li class="menu__link"><a href="#contact">Contacto</a></li>
             </ul>    
         </nav>
     </header>
     <main>
         <section class="hero">
             <div class="hero__container">
-                <h1 class="hero__titulo">Alek Posadas</h1>
+                <h1 class="hero__title">Alek Posadas</h1>
                 <h3 class="hero__description">Frontend developer</h3>
             </div>
             <img class="hero__image" src="./assets/img/foto.jpg" alt="foto de perfil">
         </section>
 
-        <section class="aboutme">
+        <section class="aboutme" id="about">
+            <div class="about__media">
+                <img src="./assets/img/foto-sin-fondo.png" alt="" class="about__image">
+            </div>
             <div class="about__container">
-                <h2 class="about__titulo">I love what I do 😁💓</h2>
+                <h2 class="about__title subtitle">I love what I do 😁💓</h2>
                 <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum consectetur tenetur obcaecati ad distinctio at ab laboriosam harum consequatur et maiores sunt vel blanditiis, facilis quibusdam facere? Fugiat, aut animi?</p>
                 <div class="about__social">
                     <iconify-icon class="about__icon" icon="skill-icons:instagram"></iconify-icon>
@@ -57,36 +61,35 @@
                     <iconify-icon class="about__icon"  icon="entypo-social:github" style="color: #071952;"></iconify-icon>
                 </div>
             </div>
-            
-            <div class="about__media">
-                <img src="./assets/img/foto-sin-fondo.png" alt="" class="about__image">
-            </div>
         </section>
 
-        <section class="skill">
-            <h2 class="skills__titulo">Skills</h2>
-            <div class="card">
-                <iconify-icon class="card__icon" icon="logos:html-5" width="50"></iconify-icon>
-                <h3 class="card__description">HTML</h3>
+        <section class="skills" id="skills">
+            <h2 class="skills__title subtitle">Skills</h2>
+            <div class="cards__container">
+                <div class="card">
+                    <iconify-icon class="card__icon" icon="logos:html-5"></iconify-icon>
+                    <h3 class="card__description">HTML</h3>
+                </div>
+                <div class="card">
+                    <iconify-icon class="card__icon" icon="logos:css-3"></iconify-icon>
+                    <h3 class="card__description">CSS</h3>
+                </div>
+                <div class="card">
+                    <iconify-icon class="card__icon card__icon--javascript" icon="vscode-icons:file-type-js-official" ></iconify-icon>
+                    <h3 class="card__description">JavaScript</h3>
+                </div>
             </div>
-            <div class="card">
-                <iconify-icon class="card__icon" icon="logos:css-3" width="50"></iconify-icon>
-                <h3 class="card__description">CSS</h3>
-            </div>
-            <div class="card">
-                <iconify-icon class="card__icon" icon="vscode-icons:file-type-js-official" width="50"></iconify-icon>
-                <h3 class="card__description">JavaScript</h3>
-            </div>
+           
         </section>
-        <section class="contacto">
-            <form class="formulario" action="">
-                <label class="formulario__label" for="name">Nombre</label>
-                <input class="formulario__input" id="name" type="text" name="name" placeholder="Escribe tu Nombre">
-                <label class="formulario__label" for="email">Correo electrónico</label>
-                <input class="formulario__input" id="email" type="email" name="email" placeholder="Tu correo electrónico" id="">
-                <label class="formulario__label" for="message">Mensaje</label>
-                <textarea class="formulario__textarea" id="message" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                <input class="formulario__btn" type="submit" value="Enviar">
+        <section class="contact" id="contact">
+            <form class="form" action="">
+                <label class="form__label" for="name">Nombre</label>
+                <input class="form__input" id="name" type="text" name="name" placeholder="Escribe tu Nombre">
+                <label class="form__label" for="email">Correo electrónico</label>
+                <input class="form__input" id="email" type="email" name="email" placeholder="Tu correo electrónico" id="">
+                <label class="form__label" for="message">Mensaje</label>
+                <textarea class="form__textarea" id="message" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                <input class="form__btn" type="submit" value="Enviar">
             </form>
         </section>            
     </main>

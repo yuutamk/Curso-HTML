@@ -23,5 +23,10 @@ textarea{
     --dark-green: rgb(11, 102, 106);
     --ligth-green: rgb(53, 162, 159);
     --ligther-green: rgb(53, 162, 159);
+    --subtitle: 5rem;
     
+}
+
+.subtitle{
+    font-size: var(--subtitle);
 }

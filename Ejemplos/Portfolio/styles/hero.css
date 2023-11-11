@@ -14,7 +14,7 @@
     background-color: var(--main-color);
 }
 
-.hero__titulo{
+.hero__title{
     font-size: 8rem;
     /* text-align: center; */ /* borramos la linea ya que lo podemos poner en el padre */
     

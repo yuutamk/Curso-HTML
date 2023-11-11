@@ -2,9 +2,9 @@
     display: flex;
     background-color: var(--ligther-green);
 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: 100vh;
     flex-wrap: wrap;
 
     padding: 3rem;
@@ -17,10 +17,10 @@
     
 }
 
-.about__titulo{
+/* .about__title{
     font-size: 5rem;
     
-}
+} */
 
 .about__icon{
     font-size: 2.4rem;

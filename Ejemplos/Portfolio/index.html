@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <title>Mi pagina</title>
 </head>
@@ -82,14 +84,18 @@
            
         </section>
         <section class="contact" id="contact">
-            <form class="form" action="">
+            <form class="form" action="#">
+                <h2 class="form__title subtitle">Contact</h2>
                 <label class="form__label" for="name">Nombre</label>
                 <input class="form__input" id="name" type="text" name="name" placeholder="Escribe tu Nombre">
                 <label class="form__label" for="email">Correo electrónico</label>
                 <input class="form__input" id="email" type="email" name="email" placeholder="Tu correo electrónico" id="">
                 <label class="form__label" for="message">Mensaje</label>
                 <textarea class="form__textarea" id="message" name="message" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                <input class="form__btn" type="submit" value="Enviar">
+                <div class="container__btn">
+                    <input class="form__btn" type="submit" value="Enviar">
+
+                </div>
             </form>
         </section>            
     </main>
@@ -101,13 +107,13 @@
         </div>
         <div  class="footer__container footer__container--links">
             <ul class="footer__list">
-                <li class="footer__link"><a href="#">Acerca de mi</a></li>
-                <li class="footer__link"><a href="#">Contacto</a></li>
-                <li class="footer__link"><a href="#">Referencias</a></li>
+                <li class="footer__element"><a class="footer__link" href="#">Acerca de mi</a></li>
+                <li class="footer__element"><a class="footer__link" href="#">Contacto</a></li>
+                <li class="footer__element"><a class="footer__link" href="#">Referencias</a></li>
             </ul>
         </div>
         <div class="footer__container footer__container--social">
-            <iconify-icon class="footer__icon" icon="devicon:github" width="50"></iconify-icon>
+            <iconify-icon class="footer__icon footer__icon-github" icon="devicon:github" width="50"></iconify-icon>
             <iconify-icon class="footer__icon" icon="devicon:linkedin" width="50"></iconify-icon>
             <iconify-icon class="footer__icon" icon="skill-icons:twitter" width="50"></iconify-icon>
         </div>

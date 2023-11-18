@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 3rem;
     background-color: black;
     height: 20vh;
@@ -32,4 +32,8 @@
 
 .footer__icon-github{
     filter: invert(1);
+}
+
+.footer__container-links{
+    justify-content: center;
 }

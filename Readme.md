@@ -156,7 +156,28 @@ Sin embargo, no podemos pasar por alto la importancia del Backend, la parte invi
 
 En conjunto, el Frontend y el Backend forman una danza sincronizada en la creación y el mantenimiento de sitios web y aplicaciones. Uno no puede existir sin el otro, y juntos construyen el mundo digital que disfrutamos a diario. Así que la próxima vez que explores la web, recuerda apreciar tanto el arte del Frontend como la potencia del Backend que trabajan en conjunto para brindarte una experiencia digital excepcional.
 
+# El Nacimiento de la Web
 
+En la década de 1990, cuando Tim Berners-Lee publicó la primera página web en el CERN, la web era un lugar muy diferente al que conocemos ahora. Las páginas web consistían principalmente en texto, sin imágenes ni elementos visuales. El lenguaje utilizado para crear estas páginas, conocido como HTML (HyperText Markup Language), estaba en su infancia y solo permitía la presentación de información de manera básica.
+
+![Tim Berners](./src/IMG/Tim_Berners.webp)
+
+Con el paso de los años, el HTML evolucionó y se añadieron nuevas características que revolucionaron la forma en que interactuamos con las páginas web. Se introdujeron elementos como imágenes, tablas y marcos, lo que permitió una mayor diversidad en el diseño y la estructura de las páginas. Los diseñadores gráficos se sumaron al desarrollo web, dando lugar a una nueva disciplina: el diseño web.
+
+
+A medida que los navegadores web se volvían más potentes y las conexiones a Internet más rápidas, las páginas web comenzaron a transformarse en aplicaciones web. La adición de formularios permitió una mayor interacción entre los usuarios y las páginas, mientras que la incorporación de contenido multimedia como audio, vídeo y animaciones enriqueció la experiencia del usuario.
+
+![app web](./src/IMG/apps.webp)
+
+Hoy en día, las páginas web no solo ofrecen información estática, sino que también son plataformas interactivas que permiten realizar una amplia variedad de tareas, desde enviar correos electrónicos hasta editar vídeos, todo ello directamente desde el navegador web.
+
+## Aprende a Crear tu Propia Página Web
+
+¿Te gustaría formar parte de esta emocionante revolución digital? ¡Estás en el lugar adecuado! En este curso, te guiaremos paso a paso en el proceso de creación de tus propias páginas web. Aprenderás los fundamentos del HTML y CSS, así como las mejores prácticas de diseño y desarrollo web.
+
+Las páginas web son solo el comienzo del fascinante mundo del hipertexto y la hipermedia. Acompáñanos en este viaje y descubre todas las increíbles posibilidades que la web tiene para ofrecer.
+
+¡Prepárate para dar vida a tus ideas y sumergirte en el emocionante mundo de las páginas web!
 
 # Página Web<a name="pagina-web"></a>
 Una **página web** es como una ventana mágica que nos conecta con el vasto mundo de Internet. Es un documento digital lleno de maravillas, como texto, imágenes, videos y sonidos, todo organizado de una manera que podemos ver y explorar utilizando un programa especial llamado "navegador web," como Google Chrome o Mozilla Firefox.

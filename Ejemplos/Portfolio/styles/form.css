@@ -47,10 +47,12 @@
 }
 
 .form__btn{
+    align-self: center;
     font-size: 1.7rem;
     font-weight: 600;
     padding: 1.5rem 0;
     border-radius: 2rem;
     border: solid 0.3rem var(--ligther-green);
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
 }

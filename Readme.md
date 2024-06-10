@@ -203,6 +203,158 @@ Ah, y una cosa importante: no confundas "página web" con "sitio web." Una pági
 Las páginas web son como tesoros digitales llenos de información y entretenimiento. Cada vez que usas Internet, estás explorando un vasto océano de páginas web, y cada una tiene algo único que ofrecer. ¡Así que sigue haciendo clic y descubriendo el mundo mágico de la web!
 
 ----
+### Hipertexto
+
+¿Qué es el hipertexto? Según el diccionario de la lengua de la Real Academia Española, el hipertexto es un conjunto estructurado de textos, gráficos, etcétera, unidos entre sí por enlaces y conexiones lógicas. A diferencia de un libro, que sigue una organización lineal, el hipertexto permite saltar de un punto a otro dentro del mismo texto o a otros textos a través de referencias. Estos términos relacionados, llamados referencias, enlaces, vínculos o hipervínculos, permiten que la lectura del texto siga diferentes caminos según las preferencias del usuario.
+
+### Hipermedia
+
+El término hipermedia, aunque no figura en el diccionario de la RAE, se puede entender a través del término multimedia. Según la RAE, multimedia significa que utiliza conjunta y simultáneamente diversos medios como imágenes, sonidos y texto, en la transmisión de una información. Un sistema multimedia puede integrar texto, voz, audio, fotografías, gráficos interactivos, vídeos, realidad virtual y otros medios. La hipermedia es, por tanto, la combinación de hipertexto y multimedia: un conjunto estructurado de diversos medios como textos, gráficos, imágenes y sonidos unidos entre sí por enlaces y conexiones lógicas para la transmisión de información.
+
+La web, el sistema más conocido basado en hipertexto y hipermedia, ha llegado a ser sinónimo de estos términos debido a su estructura y capacidad para presentar información de manera flexible y rica en contenido.
+
+## 2. Lenguajes de Marcado: Estructurando el Contenido
+
+### HTML: La Estructura de la Web
+
+Los lenguajes de etiquetas, o lenguajes de marcado, nos permiten estructurar un documento mediante el uso de etiquetas. A diferencia de los lenguajes de programación, los lenguajes de marcado no definen funciones aritméticas ni el uso de variables. El lenguaje de marcas más conocido es el HTML (HyperText Markup Language), creado por Tim Berners-Lee a inicios de los 90 como un subconjunto de SGML (Standard Generalized Markup Language). HTML es una de las piedras angulares de la World Wide Web, permitiendo crear páginas web enlazadas entre sí y accesibles desde internet.
+
+HTML ha evolucionado considerablemente, con HTML5 siendo su versión más reciente. HTML5 destaca por sus características semánticas, capacidades multimedia, nuevas funciones para formularios y su integración con tecnologías que mejoran la arquitectura de las aplicaciones web.
+
+Aquí tienes un ejemplo básico de un documento HTML:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+</head>
+<body>
+    <h1>Bienvenidos a mi página web</h1>
+    <p>Este es un párrafo de ejemplo en mi primera página web.</p>
+</body>
+</html>
+```
+![alt text](./src/IMG/example%20page%201.png)
+## 3. CSS: El Estilo de la Web
+
+Cascading Style Sheets (CSS) es lo que hace que las páginas web se vean bonitas. Controla el diseño visual y la presentación. Aquí hay un ejemplo de cómo podemos estilizar la página anterior:
+
+```html
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+```
+
+![alt text](./src/IMG/example-page-css-1.png)
+
+En este ejemplo, estamos definiendo estilos directamente en el documento HTML. Sin embargo, es una buena práctica tener estos estilos en un archivo CSS separado para mantener el código organizado.
+
+## 4. JavaScript: La Interactividad de la Web
+
+JavaScript es el lenguaje de programación que permite la interactividad en las páginas web. Desde validar formularios hasta crear animaciones complejas, JavaScript es esencial para una experiencia de usuario dinámica. Aquí hay un ejemplo simple:
+
+```html
+<body>
+    <h1>Bienvenidos a mi página web</h1>
+    <p>Este es un párrafo de ejemplo en mi primera página web.</p>
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+
+    <script>
+        function mostrarMensaje() {
+            alert('¡Hola! Gracias por visitar mi página.');
+        }
+    </script>
+</body>
+```
+![alt text](./src/IMG/example-page-js-1.1.png)
+
+En este ejemplo, cuando el usuario hace clic en el botón, aparece un mensaje de alerta.
+
+
+# Entorno de trabajo
+
+### Editor de Texto
+
+Un editor de texto es un programa que te permite escribir y editar código. A diferencia de los procesadores de texto como Microsoft Word, los editores de texto están diseñados para trabajar con el código de programación y no añaden ningún formato adicional que pueda interferir con el código.
+
+### Elegir el Editor de Texto Adecuado
+
+Hay muchos editores de texto disponibles, cada uno con sus propias características. Aquí te presentamos algunos de los más populares entre los desarrolladores web:
+
+### Visual Studio Code (VS Code) <img src="https://keepcoding.io/wp-content/uploads/2023/12/image-75-1024x1024.png" width="20" height="20" alt="VS Code"></img>
+
+Visual Studio Code es un editor de texto gratuito y de código abierto desarrollado por Microsoft. Es muy popular entre los desarrolladores web debido a su potente conjunto de características.
+
+- **Resaltado de Sintaxis**: Resalta diferentes partes de tu código con colores, lo que facilita la lectura.
+- **Autocompletado**: Sugerencias inteligentes mientras escribes.
+- **Extensiones**: Gran cantidad de extensiones disponibles para agregar funcionalidad adicional.
+
+![VSCode](https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png)
+
+### Sublime Text <img src="https://www.sublimehq.com/images/sublime_text.png" width="20" height="20" alt="VS Code"></img>
+
+Sublime Text es otro editor de texto muy popular. Es conocido por su velocidad y su interfaz de usuario elegante.
+
+- **Selecciones Múltiples**: Edita muchas líneas de código al mismo tiempo.
+- **Goto Anything**: Navega rápidamente a cualquier archivo, símbolo o línea.
+- **Modo Distraction-Free**: Modo de pantalla completa sin distracciones.
+
+![sublime text](https://www.aluracursos.com/blog/assets/sublime-text-uno-mejores-editores/img2.png)
+
+### Atom <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png" width="20" height="20" alt="VS Code"></img>
+
+
+
+Atom es un editor de texto gratuito y de código abierto desarrollado por GitHub. Es altamente personalizable y tiene una gran comunidad de usuarios.
+
+- **Control de Git Integrado**: Perfecto para trabajar con repositorios de GitHub.
+- **Temas Personalizables**: Cambia el aspecto del editor con temas.
+- **Paquetes**: Miles de paquetes disponibles para ampliar sus funcionalidades.
+
+
+![atom](https://www.edivaldobrito.com.br/wp-content/uploads/2018/06/editor-de-codigo-atom-no-linux-via-snap.jpg)
+
+## Estructura de carpetas
+
+¿Por Qué Es Importante la Estructura de Carpetas?
+Una estructura de carpetas bien organizada te ayuda a:
+
+Mantener el orden: Facilita la localización de archivos específicos.
+Mejorar la colaboración: Facilita que otros desarrolladores comprendan tu proyecto.
+Aumentar la escalabilidad: Permite agregar nuevas características sin caos.
+Optimizar el mantenimiento: Simplifica la actualización y corrección de errores.
+
+**Estructura de Carpetas Básica:**
+
+Crea una carpeta en donde vas a realizar tu poyecto de página web
+
+![alt text](./src/IMG/estructura-carpeta1.png)
+
+crea tu archivo index que será tu archivo principal y una carpeta llamada "Assets" donde irán los complementos de tu página web como imágenes y estilos
+
+![alt text](./src/IMG/estructura-carpeta2.png)
+
+dentro de la carpeta de Assets creamos las siguientes carpetas con forme se vayan necesitando
+
+![alt text](./src/IMG/estructura-carpeta3.png)
+
+
+---
 # Anatomía de la web<a name="anatomia-web"></a>
 
 ![](/src/IMG/partes-de-una-pagina-web-estructura.png)

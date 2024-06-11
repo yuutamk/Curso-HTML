@@ -171,13 +171,36 @@ A medida que los navegadores web se volvían más potentes y las conexiones a In
 
 Hoy en día, las páginas web no solo ofrecen información estática, sino que también son plataformas interactivas que permiten realizar una amplia variedad de tareas, desde enviar correos electrónicos hasta editar vídeos, todo ello directamente desde el navegador web.
 
-## Aprende a Crear tu Propia Página Web
 
-¿Te gustaría formar parte de esta emocionante revolución digital? ¡Estás en el lugar adecuado! En este curso, te guiaremos paso a paso en el proceso de creación de tus propias páginas web. Aprenderás los fundamentos del HTML y CSS, así como las mejores prácticas de diseño y desarrollo web.
+## HTML
 
-Las páginas web son solo el comienzo del fascinante mundo del hipertexto y la hipermedia. Acompáñanos en este viaje y descubre todas las increíbles posibilidades que la web tiene para ofrecer.
+[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
 
-¡Prepárate para dar vida a tus ideas y sumergirte en el emocionante mundo de las páginas web!
+[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
+
+[![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
+
+-------------------------------------
+HTML (Hyper Text Markup Lenguage) es un leguaje de marcado de texto, lo cual nos indica que no es un lenguaje de programación como Java, PHP, C o VisualBasic. HTML es el lenguaje para escribir páginas web. Las marcas, conocidas como etiquetas, describen la forma en la que se estructura el contenido de una página web.
+
+Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta **\<p>** se utiliza para delimitar párrafos de texto y la etiqueta **\<img>** para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos.
+
+
+
+El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
+
+
+
+ Si quieres saber las historia del lenguaje HTML y de Internet visita este tema básico: [Historia HTML](/history.md)
+
+ 
+
+Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
+
+En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo CSS, ya que Javascript entra dentro de otra categoría, la de los lenguajes de programación.
+
+Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
+
 
 # Página Web<a name="pagina-web"></a>
 Una **página web** es como una ventana mágica que nos conecta con el vasto mundo de Internet. Es un documento digital lleno de maravillas, como texto, imágenes, videos y sonidos, todo organizado de una manera que podemos ver y explorar utilizando un programa especial llamado "navegador web," como Google Chrome o Mozilla Firefox.
@@ -213,7 +236,74 @@ El término hipermedia, aunque no figura en el diccionario de la RAE, se puede e
 
 La web, el sistema más conocido basado en hipertexto y hipermedia, ha llegado a ser sinónimo de estos términos debido a su estructura y capacidad para presentar información de manera flexible y rica en contenido.
 
-## 2. Lenguajes de Marcado: Estructurando el Contenido
+# IDE Y EDITORES DE CODIGO<a name="ide-edit"></a>
+
+## ¿Qué es un editor de código?
+
+Es un programa ligero que no exige mucha RAM o procesador, en dónde puedes abrir y crear un archivo a la vez y guardarlo en una carpeta
+
+
+![](/src/IMG/VSCode.png)
+
+![](/src/IMG/CodeColors.png)
+
+
+
+## ¿Qué es un IDE (Integrated Development Environment)?
+
+Un ambiente de desarrollo integrado, a diferencia de un editor, es un programa más pesado que pide mucha más memoria RAM y un procesador más poderoso, además de que es un espacio para trabajar proyectos completos no solo en archivos, pueden tener un compilador (para los lenguajes compilados), un emulador, control de versiones y terminales.
+
+![](/src/IMG/IDECode.png)
+
+## IDE VS EDITOR
+![](/src/IMG/Editor_vs_IDE.png)
+
+
+# Entorno de trabajo
+
+### Editor de Texto
+
+Un editor de texto es un programa que te permite escribir y editar código. A diferencia de los procesadores de texto como Microsoft Word, los editores de texto están diseñados para trabajar con el código de programación y no añaden ningún formato adicional que pueda interferir con el código.
+
+### Elegir el Editor de Texto Adecuado
+
+Hay muchos editores de texto disponibles, cada uno con sus propias características. Aquí te presentamos algunos de los más populares entre los desarrolladores web:
+
+### Visual Studio Code (VS Code) <img src="https://keepcoding.io/wp-content/uploads/2023/12/image-75-1024x1024.png" width="20" height="20" alt="VS Code"></img>
+
+Visual Studio Code es un editor de texto gratuito y de código abierto desarrollado por Microsoft. Es muy popular entre los desarrolladores web debido a su potente conjunto de características.
+
+- **Resaltado de Sintaxis**: Resalta diferentes partes de tu código con colores, lo que facilita la lectura.
+- **Autocompletado**: Sugerencias inteligentes mientras escribes.
+- **Extensiones**: Gran cantidad de extensiones disponibles para agregar funcionalidad adicional.
+
+![VSCode](https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png)
+
+### Sublime Text <img src="https://www.sublimehq.com/images/sublime_text.png" width="20" height="20" alt="VS Code"></img>
+
+Sublime Text es otro editor de texto muy popular. Es conocido por su velocidad y su interfaz de usuario elegante.
+
+- **Selecciones Múltiples**: Edita muchas líneas de código al mismo tiempo.
+- **Goto Anything**: Navega rápidamente a cualquier archivo, símbolo o línea.
+- **Modo Distraction-Free**: Modo de pantalla completa sin distracciones.
+
+![sublime text](https://www.aluracursos.com/blog/assets/sublime-text-uno-mejores-editores/img2.png)
+
+### Atom <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png" width="20" height="20" alt="VS Code"></img>
+
+
+
+Atom es un editor de texto gratuito y de código abierto desarrollado por GitHub. Es altamente personalizable y tiene una gran comunidad de usuarios.
+
+- **Control de Git Integrado**: Perfecto para trabajar con repositorios de GitHub.
+- **Temas Personalizables**: Cambia el aspecto del editor con temas.
+- **Paquetes**: Miles de paquetes disponibles para ampliar sus funcionalidades.
+
+
+![atom](https://www.edivaldobrito.com.br/wp-content/uploads/2018/06/editor-de-codigo-atom-no-linux-via-snap.jpg)
+
+
+
 
 ### HTML: La Estructura de la Web
 
@@ -238,6 +328,7 @@ Aquí tienes un ejemplo básico de un documento HTML:
 </html>
 ```
 ![alt text](./src/IMG/example%20page%201.png)
+
 ## 3. CSS: El Estilo de la Web
 
 Cascading Style Sheets (CSS) es lo que hace que las páginas web se vean bonitas. Controla el diseño visual y la presentación. Aquí hay un ejemplo de cómo podemos estilizar la página anterior:
@@ -285,50 +376,6 @@ JavaScript es el lenguaje de programación que permite la interactividad en las 
 
 En este ejemplo, cuando el usuario hace clic en el botón, aparece un mensaje de alerta.
 
-
-# Entorno de trabajo
-
-### Editor de Texto
-
-Un editor de texto es un programa que te permite escribir y editar código. A diferencia de los procesadores de texto como Microsoft Word, los editores de texto están diseñados para trabajar con el código de programación y no añaden ningún formato adicional que pueda interferir con el código.
-
-### Elegir el Editor de Texto Adecuado
-
-Hay muchos editores de texto disponibles, cada uno con sus propias características. Aquí te presentamos algunos de los más populares entre los desarrolladores web:
-
-### Visual Studio Code (VS Code) <img src="https://keepcoding.io/wp-content/uploads/2023/12/image-75-1024x1024.png" width="20" height="20" alt="VS Code"></img>
-
-Visual Studio Code es un editor de texto gratuito y de código abierto desarrollado por Microsoft. Es muy popular entre los desarrolladores web debido a su potente conjunto de características.
-
-- **Resaltado de Sintaxis**: Resalta diferentes partes de tu código con colores, lo que facilita la lectura.
-- **Autocompletado**: Sugerencias inteligentes mientras escribes.
-- **Extensiones**: Gran cantidad de extensiones disponibles para agregar funcionalidad adicional.
-
-![VSCode](https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png)
-
-### Sublime Text <img src="https://www.sublimehq.com/images/sublime_text.png" width="20" height="20" alt="VS Code"></img>
-
-Sublime Text es otro editor de texto muy popular. Es conocido por su velocidad y su interfaz de usuario elegante.
-
-- **Selecciones Múltiples**: Edita muchas líneas de código al mismo tiempo.
-- **Goto Anything**: Navega rápidamente a cualquier archivo, símbolo o línea.
-- **Modo Distraction-Free**: Modo de pantalla completa sin distracciones.
-
-![sublime text](https://www.aluracursos.com/blog/assets/sublime-text-uno-mejores-editores/img2.png)
-
-### Atom <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png" width="20" height="20" alt="VS Code"></img>
-
-
-
-Atom es un editor de texto gratuito y de código abierto desarrollado por GitHub. Es altamente personalizable y tiene una gran comunidad de usuarios.
-
-- **Control de Git Integrado**: Perfecto para trabajar con repositorios de GitHub.
-- **Temas Personalizables**: Cambia el aspecto del editor con temas.
-- **Paquetes**: Miles de paquetes disponibles para ampliar sus funcionalidades.
-
-
-![atom](https://www.edivaldobrito.com.br/wp-content/uploads/2018/06/editor-de-codigo-atom-no-linux-via-snap.jpg)
-
 ## Estructura de carpetas
 
 ¿Por Qué Es Importante la Estructura de Carpetas?
@@ -353,6 +400,105 @@ dentro de la carpeta de Assets creamos las siguientes carpetas con forme se vaya
 
 ![alt text](./src/IMG/estructura-carpeta3.png)
 
+
+---
+
+## ¿Qué son las Etiquetas HTML?
+
+El HTML, o HyperText Markup Language, es el lenguaje estándar para crear páginas web. Se compone de una serie de etiquetas o marcas que el navegador web entiende y usa para renderizar el contenido de una página. Estas etiquetas están encerradas entre los signos `<>` y generalmente vienen en pares: una etiqueta de apertura y una etiqueta de cierre, como `<etiqueta></etiqueta>`. Entre estas etiquetas se encuentra el contenido, que puede ser texto, imágenes u otras etiquetas.
+
+### Sintaxis Básica
+
+La estructura básica de una etiqueta HTML es la siguiente:
+
+```html
+<etiqueta>
+  Contenido de la etiqueta
+</etiqueta>
+```
+
+Sin embargo, hay algunas etiquetas que no requieren una etiqueta de cierre ni contenido. Por ejemplo, la etiqueta `<br>` que inserta un salto de línea.
+
+
+n HTML5, hay una amplia variedad de etiquetas que nos permiten estructurar y organizar el contenido de nuestras páginas web. Aquí te presentamos algunas de las más usadas:
+
+- **`<a>`**: Define y da forma a un ancla o enlace.
+- **`<abbr>`**: Introduce una abreviatura.
+- **`<address>`**: Especifica un elemento de dirección.
+- **`<article>`**: Define una parte independiente del contenido de un documento, como una entrada de blog.
+- **`<aside>`**: Define contenido aparte del contenido principal, como una barra lateral.
+- **`<audio>`**: Permite introducir un archivo de audio.
+- **`<br>`**: Inserta un solo salto de línea.
+- **`<button>`**: Especifica un botón pulsador.
+- **`<canvas>`**: Se utiliza para representar gráficos de mapa de bits dinámicos.
+- **`<div>`**: Define una sección en un documento HTML.
+- **`<form>`**: Para introducir formularios.
+- **`<footer>`**: Representa el pie de una sección, con información adicional.
+- **`<header>`**: Representa un grupo de artículos introductorios o de navegación.
+- **`<hgroup>`**: Sirve para crear el encabezado de una sección.
+- **`<h1>`** a **`<h6>`**: Especifica encabezados del nivel 1 al nivel 6.
+- **`<img>`**: Introduce una imagen.
+- **`<nav>`**: Define una sección del documento destinada a la navegación.
+- **`<p>`**: Etiqueta usada para párrafos de texto.
+- **`<script>`**: Sirve para introducir un script.
+- **`<section>`**: Define una sección genérica para un documento.
+
+
+## Elementos en Bloque y Elementos en Línea
+
+Todos los elementos HTML se dividen en dos categorías principales: elementos en bloque y elementos en línea.
+
+### Elementos en Bloque
+
+Los elementos en bloque estructuran la parte principal de la página web, dividiéndola en bloques coherentes. Siempre comienzan con una nueva línea y ocupan todo el ancho de la página web. Algunos ejemplos de elementos en bloque son:
+
+```html
+<p>Este párrafo es un elemento en bloque.</p>
+<article>
+  <h1>Encabezado de Artículo</h1>
+  <p>Contenido del artículo...</p>
+</article>
+```
+
+### Elementos en Línea
+
+Los elementos en línea diferencian partes de un texto dado y le proporcionan una función particular. No comienzan con una nueva línea y ocupan solo el ancho necesario. Son usados principalmente con otros elementos. Algunos ejemplos de elementos en línea son:
+
+```html
+<p>Texto normal y... <b>Texto en negrita</b></p>
+<a href="https://ejemplo.com">Esto es un enlace</a>
+```
+
+## Atributos en HTML
+
+Los atributos en HTML son palabras especiales usadas dentro de la etiqueta de apertura para controlar el comportamiento del elemento. Proveen información adicional sobre el elemento. Cada atributo tiene un nombre y un valor:
+
+```html
+<elemento atributo="valor">Contenido del elemento</elemento>
+```
+
+### Ejemplos de Atributos
+
+- **`id`**: Identifica un elemento único.
+- **`class`**: Identificador múltiple.
+- **`style`**: Aplica estilos al contenido.
+- **`href`**: Define la URL para un enlace.
+- **`src`**: Especifica la fuente de una imagen.
+- **`height`** y **`width`**: Determinan la altura y el ancho de un elemento.
+
+### Ejemplo Práctico
+
+Veamos un ejemplo práctico usando la etiqueta `<a>` con el atributo `href`:
+
+```html
+<a href="https://pilares.cdmx.gob.mx/inicio">Esto es un link</a>
+```
+
+Y un ejemplo usando la etiqueta `<img>` con los atributos `src`, `height` y `width`:
+
+```html
+<img src="pilares.jpg" height="400" width="600">
+```
 
 ---
 # Anatomía de la web<a name="anatomia-web"></a>
@@ -382,59 +528,14 @@ Es importante destacar que aunque esta estructura es la más común, no todas la
 La anatomía de una página web es como una obra de arte, con cada elemento desempeñando un papel crucial en la experiencia del usuario. Al entender esta estructura básica, podemos apreciar cómo los diseñadores web crean experiencias únicas en línea para que todos las disfrutemos.
 
 
-# IDE Y EDITORES DE CODIGO<a name="ide-edit"></a>
-
-## ¿Qué es un editor de código?
-
-Es un programa ligero que no exige mucha RAM o procesador, en dónde puedes abrir y crear un archivo a la vez y guardarlo en una carpeta
-
-
-![](/src/IMG/VSCode.png)
-
-![](/src/IMG/CodeColors.png)
-
-## ¿Qué es un IDE (Integrated Development Environment)?
-
-Un ambiente de desarrollo integrado, a diferencia de un editor, es un programa más pesado que pide mucha más memoria RAM y un procesador más poderoso, además de que es un espacio para trabajar proyectos completos no solo en archivos, pueden tener un compilador (para los lenguajes compilados), un emulador, control de versiones y terminales.
-
-![](/src/IMG/IDECode.png)
-
-## IDE VS EDITOR
-![](/src/IMG/Editor_vs_IDE.png)
 
 
 
 
 
 
-## HTML
-
-[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
-
-[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
-
-[![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
-
--------------------------------------
-HTML (Hyper Text Markup Lenguage) es un leguaje de marcado de texto, lo cual nos indica que no es un lenguaje de programación como Java, PHP, C o VisualBasic. HTML es el lenguaje para escribir páginas web. Las marcas, conocidas como etiquetas, describen la forma en la que se estructura el contenido de una página web.
-
-Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta **\<p>** se utiliza para delimitar párrafos de texto y la etiqueta **\<img>** para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos.
 
 
-
-El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
-
-
-
- Si quieres saber las historia del lenguaje HTML y de Internet visita este tema básico: [Historia HTML](/history.md)
-
- 
-
-Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
-
-En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo CSS, ya que Javascript entra dentro de otra categoría, la de los lenguajes de programación.
-
-Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
 
 # **Introducción a las Etiquetas HTML y Estructura Básica de una Página Web**<a name="Introduccion-Etiquetas"></a>
 

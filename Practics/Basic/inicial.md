@@ -40,7 +40,8 @@ A continuación, te enseñaré cómo crear una página web sencilla utilizando H
     </html>
     ```
 
-![](../src/inicial-1.png)
+
+
 3. **Guardar el Archivo:**
    - Guarda el archivo como `index.html` en la carpeta `Pagina_web`.
 
@@ -50,12 +51,14 @@ A continuación, te enseñaré cómo crear una página web sencilla utilizando H
    - Navega hasta la carpeta `Pagina_web` y abre `index.html` con tu navegador web preferido.
    - Deberías ver una página con el contenido definido en el archivo HTML.
 
+![](../src/inicial-1.png)
+
 ## Paso 4: Agregar una Imagen a la Página Web
 
 1. **Preparar la Imagen:**
    - Descarga o ubica una imagen en tu computadora que desees agregar a tu página web.
    - Crea una carpeta llamada `imagenes` dentro de la carpeta `Pagina_web`.
-   - Copia la imagen a la carpeta `imagenes` y nómbrala `ciudad.PNG` (puede ser cualquier nombre, pero asegúrate de usar la misma en el código).
+   - Descarga una imagen de internet, Copia la imagen a la carpeta `imagenes` y nómbrala `ciudad.PNG` (puede ser cualquier nombre, pero asegúrate de usar la misma en el código).
 
 2. **Modificar el Archivo HTML:**
    - Abre el archivo `index.html` y reemplaza su contenido con el siguiente código:
@@ -91,6 +94,8 @@ A continuación, te enseñaré cómo crear una página web sencilla utilizando H
 
 4. **Visualizar los Cambios:**
    - Abre nuevamente el archivo `index.html` en tu navegador web. Ahora deberías ver la imagen centrada y con un ancho del 50% del contenedor.
+
+![](../src/inicial-2.png)   
 
 ## Explicación del Código
 

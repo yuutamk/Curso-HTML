@@ -1,7 +1,0 @@
-quitar fondo https://www.remove.bg/es
-paleta de color https://colorhunt.co/
-formas svg https://www.blobmaker.app/
-color gradiente https://cssgradient.io/
-reset css https://www.aluracursos.com/blog/reset-css-que-es-ejemplos-como-crear-y-utilizar
-google fonts https://fonts.google.com/
-iconos https://icon-sets.iconify.design/

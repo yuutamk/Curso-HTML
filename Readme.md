@@ -190,9 +190,6 @@ Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiq
 El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
 
 
-
- Si quieres saber las historia del lenguaje HTML y de Internet visita este tema básico: [Historia HTML](/history.md)
-
  
 
 Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
@@ -302,7 +299,21 @@ Atom es un editor de texto gratuito y de código abierto desarrollado por GitHub
 
 ![atom](https://www.edivaldobrito.com.br/wp-content/uploads/2018/06/editor-de-codigo-atom-no-linux-via-snap.jpg)
 
+----
 
+### Estructura de Carpetas Básica:
+
+Crea una carpeta en donde vas a realizar tu poyecto de página web
+
+![alt text](./src/IMG/estructura-carpeta1.png)
+
+crea tu archivo index que será tu archivo principal y una carpeta llamada "Assets" donde irán los complementos de tu página web como imágenes y estilos
+
+![alt text](./src/IMG/estructura-carpeta2.png)
+
+dentro de la carpeta de Assets creamos las siguientes carpetas con forme se vayan necesitando
+
+![alt text](./src/IMG/estructura-carpeta3.png)
 
 
 ### HTML: La Estructura de la Web
@@ -386,19 +397,7 @@ Mejorar la colaboración: Facilita que otros desarrolladores comprendan tu proye
 Aumentar la escalabilidad: Permite agregar nuevas características sin caos.
 Optimizar el mantenimiento: Simplifica la actualización y corrección de errores.
 
-**Estructura de Carpetas Básica:**
 
-Crea una carpeta en donde vas a realizar tu poyecto de página web
-
-![alt text](./src/IMG/estructura-carpeta1.png)
-
-crea tu archivo index que será tu archivo principal y una carpeta llamada "Assets" donde irán los complementos de tu página web como imágenes y estilos
-
-![alt text](./src/IMG/estructura-carpeta2.png)
-
-dentro de la carpeta de Assets creamos las siguientes carpetas con forme se vayan necesitando
-
-![alt text](./src/IMG/estructura-carpeta3.png)
 
 
 ---
@@ -559,7 +558,7 @@ A continuación está el texto del contenido de la etiqueta, lo más frecuente e
 
 La etiqueta de cierre está delimitada por el signo < "menor que", a continuación la barra inclinada /, el propio nombre de la etiqueta (en este caso p), y finalmente el signo > "mayor que".
 
-Algunas etiquetas no tienen contenido, y se cierran sobre sí mismas, no tienen etiqueta de cierre, se llaman etiquetas vacías, como la etiqueta \<br>. En estas etiquetas opcionalmente se puede colocar una barra justo antes del signo >, por ejemplo: \<br />. La etiqueta \<br> produce un salto de línea. Las etiquetas vacías no tienen contenido pero si pueden tener atributos. Algunas otras etiquetas vacías son  \<hr>, \<img>, \<input>, \<link>, \<meta>, \<param> y \<source>.
+Algunas etiquetas no tienen contenido, y se cierran sobre sí mismas, no tienen etiqueta de cierre, se llaman etiquetas vacías, como la etiqueta ``<br>``. En estas etiquetas opcionalmente se puede colocar una barra justo antes del signo >, por ejemplo: ``<br />``. La etiqueta ``<br>`` produce un salto de línea. Las etiquetas vacías no tienen contenido pero si pueden tener atributos. Algunas otras etiquetas vacías son  ``<hr>``, ``<img>``, ``<input>``, ``<link>``, ``<meta>``, ``<param>`` y ``<source>``.
 
 En una etiqueta, la primera palabra que aparece es el nombre de la etiqueta. También podemos encontrar atributos con sus valores, siguiendo el formato ``<etiqueta atributo1="valor" atributo2="valor">``. La forma más correcta es escribir el nombre de la etiqueta y los atributos en minúscula, y los valores entre comillas dobles.
 
@@ -595,57 +594,65 @@ Por otro lado, los navegadores pueden obviar pequeños errores y mostrar la pág
 
 Para ver los errores de una página web existen validadores de código HTML, como el de W3C, que nos muestran los errores indicando su grado de gravedad.
 
-## Mi primera página web<a name="primera-web"></a>
-Vamos a comenzar por escribir una página web muy sencilla. Para ello podemos utilizar cualquier editor de texto sin formato, por ejemplo, el Bloc de Notas (Notepad) incluido en Windows. En ordenadores Apple puedes usar el TextEdit. Para abrir el Bloc de Notas en Windows 8 o posterior, teclea Bloc de Notas en la caja de búsqueda de la barra de tareas y ábrelo. En Windows 7 desde el Menú Inicio → Programas → Accesorios → Bloc de notas
 
-El aspecto del Bloc de Notas es muy simple, una hoja en blanco con una barra de menús.
+# Etiquetas básicas
 
-![](https://www.aulaclic.es/html/graficos/bloc_notas.png)
+A continuacion se da una lista de etiquetas y parametros usados en HTML5
 
-Escribiremos el siguiente código. Más adelante ya veremos qué es cada elemento:
+| Etiquetas | Parámetros | Para qué sirve…                                                                           | 
+|-----------|------------|-------------------------------------------------------------------------------------------|
+| \<p>       |            | Salto de parrafo                                                                          |
+| \<br>      |            | Salto de línea                                                                            | 
+| \<pre>     |            | Formato predeterminado, es decir, que respete los saltos de parrafo y espacios del texto  |
+| \<img>     |            | Insertar una imagen                                                                       |
+|           | src        | Especificar la dirección o ruta de la imagen                                              | 
+|           | alt        | Texto alternativo (aparece al colocar el puntero del ratón sobre la imagen)               | 
+|           | width      | Ancho de la imagen, sus unidades están dadas en pixeles                                   | 
+|           | height     | Alto de la imagen, sus unidades estan dadas en pixeles                                    | 
+| \<ol>      |            | Listas  numeradas u ordenadas                                                             | 
+|      | reversed | Indica que la numeración  debe ser descendente y su valor  es reversed (\<ol> reversed="reversed")                                                                                    |   
+|      | start    | Espécifica el valor inicial de una lista (\<ol start="23">)                                                                                                                           |   
+|      | type     | Especifica el tipo de número que se utilizará en la lista, los valores pueden ser: 1,A,a,I,i                                                                                         |  
+| \<ul> |          | Listas no ordenadas o con viñetas                                                                                                                                                    |   
+| \<li> |          | Permite definir los elementos de las listas numeradas y no numeradas                                                                                                                 | 
+|      | value    | Especifica el valor de un elemento de la lista                                                                                                                                       |   
+| \<a>  |          | Estable un vinculo desde una pagina web a otra                                                                                                                                       |   
+|      | href     | Especifica la dirección URL (\<a href="www.ccpm.com.mx">Visita el sitio de CCPM</a>)                                                                                                  |  
+|      | rel      | Especifica la relacón  entre el documento actual y el documento vinculado, y sus valores pueden ser: alternate, author, bookmark, help, license, next, nofollow, search, tag, prev.  |   
+|      | target   | Especifica dónde se abrirá el documento vinculado, y sus valores pueden ser: _blank, _parent, _self, _top.                                                                          |  
+| \<html>      |          | Representa la raiz del documento, es decir, es el contenedor de todos los demas elementos de html                       |
+|             | manifest | Especifica la dirección del documento en la memoria caché, para navegar sin conexión, y sus valor es una dirección URL  |
+|             | lang     | Especifica el idioma del contenido                                                                                      |
+| \<table>     |          | Define una tabla                                                                                                        |
+|             | border   | Un grosor para el borde de la tabla (\<table border="5">)                                                                |
+| \<tr>        |          | Define una fila de la tabla                                                                                             |
+| \<td> o \<th> |          | Define una celda. \<td> define una celda normal. \<th> define una celda de tipo cabecera (en negritas y centrado)          |
+|             | colspan  | Indica el numero de columnas que la celda debe abarcar                                                                  |
+|             | rowspan  | Indica  el numero de filas que una celda debe abarcar                                                                   |
+| \<caption>   |          | Define un titulo para la tabla, se inserta despues de la etiqueta \<table>                                               |
+| \<dl>        |            | Define una lista de definiciones. Esta etiqueta se utiliza junto con \<td> y \<dd>                  |
+| \<dt>        |            | Define un termino en una lista de definiciones                                                    |
+| \<dd>        |            | Define la descripcion del termino en una lista de definiciones                                    |
+| \<h1> a \<h6> |            | Define un encabezado de tipo 1 a 6                                                                |
+| \<b>         |            | Define un texto en negritas                                                                       |
+| \<hr>        |            | Inserta una linea horizontal. Se utiliza para separar visualmente el contenido de una pagina web  |
+| \<body>      |            | Inicia el cuerpo de la pagina                                                                     |
+|             | bgcolor    | Indica un color de fondo, este puede ser el nombre en ingles o bien el valor hexadecimal          |
+|             | Background | Especifica una imagen de fondo, su valor es una direccion URL donde se encuentra la imagen        |
+| \<figure>    |            | Marcar una foto en un documento                                                                   |
+| \<dl>     |        | Define una lista de definiciones. Esta etiqueta se utiliza junto con \<td> y \<dd>   |
+| \<dt>     |        | Define un termino en una lista de definiciones                                     |
+| \<dd>     |        | Define la descripcion del termino en una lista de definiciones                     |
+| \<div>    |        | Insertar un recuedro dentrro de la pagina, es una forma de division en una pagina  |
+| \<canvas> |        | Dibuja un lienzo                                                                   |
+|          | width  | Ancho del lienzo                                                                   |
+|          | height | Alto del lienzo                                                                    |
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
- <title>Mi primera página</title>
-</head>
-<body>
- <p>Visita mi pagina</p>
-</body>
-</html>
-```
 
-- `<!DOCTYPE html>`: Declara el tipo de documento.
-- `<html>`: Etiqueta raíz que envuelve toda la página.
-- `<head>`: Contiene metadatos y enlaces a hojas de estilo.
-- `<title>`: Define el título de la página que se muestra en la barra del navegador.
-- `<body>`: Contiene el contenido visible de la página.
-- `<p>`: Etiqueta de párrafo que contiene el texto "Visita mi página".
 
-Una vez escrito, vamos a guardarlo. Pero antes de continuar, debemos de explicar lo que es la extensión de un archivo. La extensión indica de qué tipo es un archivo. La extensión son las tres letras que van después del punto al final del nombre de un archivo (por ejemplo, imagen.gif o documento.doc). Puedes abrir cualquier carpeta para comprobarlo. Si no puedes ver las extensiones, es porque Windows las oculta. Si es tu caso, puedes hacer que las muestre, abre el Explorador de Windows y haz clic en la pestaña Vista, abre Mostrar u ocultar y marca la opción Extensiones de nombre de archivo, tal y como muestra la siguiente imagen.
+----
 
-![](https://www.aulaclic.es/html/graficos/extension.png)
 
-Vamos a continuar guardando la página. Pulsamos en el menú Archivo y elegimos Guardar. Introducimos el nombre, por ejemplo primera. Si ahora pulsásemos Guardar, se guardaría con la extensión txt, que indica que es un documento de texto sin formato. Para guardarlo como una página web, debemos de emplear la extensión .html (o .htm). Por lo que completamos el nombre para que quede primera.html y pulsamos Guardar.
-
-![](https://www.aulaclic.es/html/graficos/primera.png)
-
-Ahora, utilizando el Explorador de Windows, abrimos la carpeta en la que hemos guardado el archivo y hacemos doble clic sobre él. Como el archivo tiene extensión .html, se abrirá la página con el navegador que tengamos como predeterminado. Por ejemplo, en Google Chrome, el resultado se ve así:
-
-![vista ejemplo primera](/src/IMG/view-primera.png)
-
-Observa que no se muestra todo lo que hemos escrito. Si te fijas en el documento del Bloc de Notas, verás que todo lo que aparece entre los signos "<" y ">" no se muestra. Esos signos delimitan una etiqueta de HTML, y todas las que hemos utilizado siguen el formato ``<etiqueta>contenido</etiqueta>``. Por ejemplo, la etiqueta \<title> contiene el texto que se mostrará como título de la página, y la etiqueta \<p> indica un párrafo con texto normal.
-
-Por lo tanto, un navegador web es una aplicación capaz de interpretar el código HTML, formado por etiquetas y mostralo debidamente formateado. En cualquier momento, podemos ver el código HTML de la página que estamos viendo. En los navegadores Chrome y Firefox, podemos hacerlo pulsando con el botón derecho sobre una zona de texto de la página para que se abra un menú contextual, desde el que elegiremos Ver código fuente de la página. Otra forma de hacer lo mismos es pulsar las teclas Ctrl + U. Un paso más es el Inspector de código que permite modificar las propiedades CSS y ver el resultado directamente.
-
-Por lo que hemos visto hasta ahora debe quedar claro que una página web es un archivo con extensión .html que se abre con un navegador web y que se escribe con cualquier editor de texto plano.
-
- Para practicar esto por ti mismo es conveniente que realices este ejercicio paso a paso: Crear mi primera página web.
-
-Para que la página que acabamos de crear la pudiese ver todo el mundo simplemente habría que guardarla en un ordenador especial llamado servidor de Internet.
-
-# Etiquetas de Texto<a name="etiquetas-texto"></a>
 
 ## Estructura básica de la página
 
@@ -677,7 +684,9 @@ Dentro de \<head>, para optimizar la página para diferentes anchos de pantalla,
 
 En el \<body> encontramos el contenido de la página, lo que se ve a través del navegador: texto, imágenes, enlaces, tablas, etc... Por lo tanto dentro del \<body> pueden ir la gran mayoría de las etiquetas html.
 
-## Escribiendo texto en el cuerpo de la página
+# Etiquetas de Texto<a name="etiquetas-texto"></a>
+
+
 
 Como estamos diciendo todo el texto de la página estará dentro del **\<body>**, el texto dentro del **\<body>** debe estar, principalmente, dentro de párrafos. En HTML, los párrafos se identifican con la etiqueta `<p></p>`. Dentro de los párrafos colocaremos texto e imágenes, y algunas etiquetas que nos permitan dar formato al texto. Dentro de un párrafo no debe haber otros párrafos anidados.
 
@@ -689,13 +698,13 @@ El navegador también ignora los saltos de línea. Así si dentro de un párrafo
 
 Cada etiqueta `<p></p>` lleva implicito un salto de línea.
 
-Veremos con más detalle y ejemplos la etiqueta **\<p>**, un poco más adelante
+Veremos con más detalle y ejemplos la etiqueta ``<p>``, un poco más adelante
 
-Otras formas de agrupar el contenido dentro de la página web es con las etiquetas \<div> y \<span>. La etiqueta \<div> se utiliza a nivel de bloque y la etiqueta \<span> a nivel de línea o palabras. Estas etiquetas son básicamente contenedores genéricos de contenido. El contenido se escribe entre las etiquetas de apertura y de cierre \<div> contenido \</div>, el criterio para agrupar contenido no está definido estrictamente, por lo tanto podemos utilizarlas para lo que queramos, por ejemplo para dar estilo al contenido.
+Otras formas de agrupar el contenido dentro de la página web es con las etiquetas ``<div>`` y ``<span>``. La etiqueta ``<div>`` se utiliza a nivel de bloque y la etiqueta ``<span>`` a nivel de línea o palabras. Estas etiquetas son básicamente contenedores genéricos de contenido. El contenido se escribe entre las etiquetas de apertura y de cierre ``<div>`` contenido ``</div>``, el criterio para agrupar contenido no está definido estrictamente, por lo tanto podemos utilizarlas para lo que queramos, por ejemplo para dar estilo al contenido.
 
-Podríamos decir que las etiquetas \<div> y \<span> son unas etiquetas neutras dentro de la semántica de HTML. Por el contrario, en HTML 5 han surgido nuevas etiquetas semánticas para agrupar el contenido según su significado. Estas nuevas etiquetas a nivel de bloque son, ``section`` para secciones, ``article`` para artículos, ``header`` para cabeceras, ``nav`` para menús, ``footer`` para pies de página y ``aside`` para contenido en el lateral. A nivel de línea o texto tenemos muchas etiquetas semánticas como ``strong``, ``em``, ``cite``. A lo largo del curso iremos viéndolas con detalle.
+Podríamos decir que las etiquetas ``<div>`` y ``<span>`` son unas etiquetas neutras dentro de la semántica de HTML. Por el contrario, en HTML 5 han surgido nuevas etiquetas semánticas para agrupar el contenido según su significado. Estas nuevas etiquetas a nivel de bloque son, ``section`` para secciones, ``article`` para artículos, ``header`` para cabeceras, ``nav`` para menús, ``footer`` para pies de página y ``aside`` para contenido en el lateral. A nivel de línea o texto tenemos muchas etiquetas semánticas como ``strong``, ``em``, ``cite``. A lo largo del curso iremos viéndolas con detalle.
 
-El uso de estas nuevas etiquetas semánticas no es obligatorio, pero sí recomendable, sobre todo para tener la información mejor estructurada y también para que los buscadores sean capaces de identificar mejor el contenido de nuestra página. Resumiendo, lo recomendable es utilizar las etiquetas semánticas y en los casos en los que no exista una etiqueta semántica apropiada utilizar etiquetas \<div> y \<span>.
+El uso de estas nuevas etiquetas semánticas no es obligatorio, pero sí recomendable, sobre todo para tener la información mejor estructurada y también para que los buscadores sean capaces de identificar mejor el contenido de nuestra página. Resumiendo, lo recomendable es utilizar las etiquetas semánticas y en los casos en los que no exista una etiqueta semántica apropiada utilizar etiquetas ``<div>`` y ``<span>``.
 
 Otras etiquetas para agrupar y organizar el contenido (texto, imágenes, ...) en formatos estructurados son las listas (ul, ol, li) y las tablas (table, tr, td)
 

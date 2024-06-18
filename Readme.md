@@ -1479,6 +1479,244 @@ Ejemplo:
 </form>
 ```
 
+
+#### Tabla de parametros de ``<input>``
+
+|Atributos|Valores|Descripción|
+|:----|:----|:----|
+|accept|audio/*|Especifica los tipos de archivos que el servidor acepta (solo para type="file")|
+| |video/*| |
+| |image/*| |
+| |MIME_type| |
+|align|left|Especifica la alineación|
+| |right| |
+| |top| |
+| |middle| |
+| |bottom| |
+|alt|text|Especifica un texto alternative solo para imágenes (type="image")|
+|checked|Checked|Especifica que un elemento ``<input>`` debe ser preseleccionado cuando se carga la pagina (type="checkbox" o type="radio")|
+|disabled|disabled|Especifica sii el elemento ``<input>`` sera deshabilitado|
+|size|numero|Especifica el ancho en caracteres de un elemento ``<input>``|
+|src|Direccion URL|Especifica la direccion URL de la imagen que desea utilizar como un boton de envio (solo para type ="image")|
+|type|button|Especifica el tipo de entrada para mostrar|
+| |checkbox| |
+| |color| |
+| |date| |
+| |datetime| |
+| |datetime-local| |
+| |email| |
+| |file| |
+| |hidden| |
+| |image| |
+| |month| |
+| |number| |
+| |password| |
+| |radio| |
+| |range| |
+| |reset| |
+| |search| |
+| |submit| |
+| |tel| |
+| |text| |
+| |time| |
+| |url| |
+| |week| |
+|autocomplete|on|Especifica si un elemento ``<input>`` debe tener habilitada la funcion autocompletar|
+| |off| |
+|autofocus|autofocus|Especifica si un elemento ``<input>`` debe recibir automaticamente el foco cuando se carga la pagina|
+|form|Identificador de form|Especifica uno o mas formularios al que pertenece el elemento ``<input>``|
+|formaaction|Direccion URL|Especifica la direccion URL del archivo que va a procesar el control de entrada cuando se envia el formulario (por type="submit" o type="image")|
+|formnovalidate|formnovalidate|Define que los elementos del formulario no deben ser validados cuando son enviados|
+|formtarget|_blank|Especifica donde se mostrará la respuesta que se recibe despues de enviar el formulario (por type="submit" o type="image")|
+| |_self| |
+| |_parent| |
+| |_top| |
+| |Nombre del frame| |
+|height|valor en pixeles|Especifica el alto  de un elemento ``<input>`` (solo para type="image")|
+|width|valor en pixeles|Especifica el ancho  de un elemento ``<input>`` (solo para type="image")|
+|list|identificador del datalist|Se refiere a un elemento ``<datalist>`` que contiene opciones  predefinidas para un elemento ``<input>``|
+|max|number date|Especifica el valor maximo para un elemento ``<input>``|
+|min|number date|Especifica el valor minimo para un elemento ``<input>``|
+|maxlength|numero|Especifica el numero maximo de caracteres permitidos en un elemento ``<input>``|
+|multiple|multiple|Especifica que el usuario puede introducir mas de un valor en un elemento ``<input>``|
+|pattern|Expresion regular|Especifica una expresion regular que se compara  con el valor del elemento ``<input>``|
+|placeholder|texto|Especifica un texto predeterminado que se escribe el valor  esperado de un elemento ``<input>``|
+|required|required|Especifica que un campo de entrada debe ser completado antes de enviar el formulario|
+|step|numero|Especifica los intervalos de numeros reales para un campo de entrada|
+
+
+
+#### atributo en la etiqueta `<input>`:
+
+1. **accept**:
+   ```html
+   <input type="file" accept="audio/*">
+   <input type="file" accept="video/*">
+   <input type="file" accept="image/*">
+   <input type="file" accept="application/pdf">
+   ```
+
+2. **align**:
+   ```html
+   <input type="text" align="left">
+   <input type="text" align="right">
+   <input type="text" align="top">
+   <input type="text" align="middle">
+   <input type="text" align="bottom">
+   ```
+
+3. **alt**:
+   ```html
+   <input type="image" src="submit_button.png" alt="Enviar">
+   ```
+
+4. **checked**:
+   ```html
+   <input type="checkbox" checked>
+   <input type="radio" checked>
+   ```
+
+5. **disabled**:
+   ```html
+   <input type="text" disabled>
+   ```
+
+6. **size**:
+   ```html
+   <input type="text" size="30">
+   ```
+
+7. **src**:
+   ```html
+   <input type="image" src="submit_button.png">
+   ```
+
+8. **type**:
+   ```html
+   <input type="button" value="Click me">
+   <input type="checkbox">
+   <input type="color">
+   <input type="date">
+   <input type="datetime-local">
+   <input type="email">
+   <input type="file">
+   <input type="hidden">
+   <input type="image" src="submit_button.png">
+   <input type="month">
+   <input type="number">
+   <input type="password">
+   <input type="radio">
+   <input type="range">
+   <input type="reset">
+   <input type="search">
+   <input type="submit" value="Submit">
+   <input type="tel">
+   <input type="text">
+   <input type="time">
+   <input type="url">
+   <input type="week">
+   ```
+
+9. **autocomplete**:
+   ```html
+   <input type="text" autocomplete="on">
+   <input type="text" autocomplete="off">
+   ```
+
+10. **autofocus**:
+    ```html
+    <input type="text" autofocus>
+    ```
+
+11. **form**:
+    ```html
+    <form id="form1">
+      <input type="text" form="form1">
+    </form>
+    ```
+
+12. **formaaction**:
+    ```html
+    <input type="submit" formaction="submit_page.php">
+    ```
+
+13. **formnovalidate**:
+    ```html
+    <input type="submit" formnovalidate>
+    ```
+
+14. **formtarget**:
+    ```html
+    <input type="submit" formtarget="_blank">
+    <input type="submit" formtarget="_self">
+    <input type="submit" formtarget="_parent">
+    <input type="submit" formtarget="_top">
+    <input type="submit" formtarget="frame_name">
+    ```
+
+15. **height**:
+    ```html
+    <input type="image" src="submit_button.png" height="100">
+    ```
+
+16. **width**:
+    ```html
+    <input type="image" src="submit_button.png" width="100">
+    ```
+
+17. **list**:
+    ```html
+    <input type="text" list="datalist1">
+    <datalist id="datalist1">
+      <option value="Option 1">
+      <option value="Option 2">
+      <option value="Option 3">
+    </datalist>
+    ```
+
+18. **max**:
+    ```html
+    <input type="number" max="10">
+    <input type="date" max="2023-12-31">
+    ```
+
+19. **min**:
+    ```html
+    <input type="number" min="1">
+    <input type="date" min="2023-01-01">
+    ```
+
+20. **maxlength**:
+    ```html
+    <input type="text" maxlength="10">
+    ```
+
+21. **multiple**:
+    ```html
+    <input type="file" multiple>
+    ```
+
+22. **pattern**:
+    ```html
+    <input type="text" pattern="[A-Za-z]{3}">
+    ```
+
+23. **placeholder**:
+    ```html
+    <input type="text" placeholder="Enter your name">
+    ```
+
+24. **required**:
+    ```html
+    <input type="text" required>
+    ```
+
+25. **step**:
+    ```html
+    <input type="number" step="2">
+    <input type="time" step="60">
+    ```
+
 ¡Felicidades! Ahora tienes una comprensión sólida de cómo trabajar con formularios, cuadros de texto, botones, casillas de verificación y menús en HTML.
 
 ---
@@ -1490,6 +1728,43 @@ Los elementos multimedia son esenciales para hacer que tu sitio web sea atractiv
 - **¿Qué son los Elementos Multimedia?** Son componentes que enriquecen la experiencia del usuario con sonidos, videos y más.
 - **Multimedia en una Página Web:** Cómo integrar sonidos y videos de manera efectiva en tu sitio.
 - **Sonidos y Videos:** Los componentes más comunes de multimedia.
+
+#### Tabla de etiquetas
+
+|Etiquetas|Parámetros|Para qué sirve…|
+|:----|:----|:----|
+|\<audio>| |Inserta contenido de audio|
+|\<video>| |Inserta videos o peliculas|
+|\<source>| |Inserta multiples recursos multimedia para las etiquetas de ``<audio>`` y ``<video>``|
+| |Src|Especifica la ruta del archivo de audio o video|
+| |Type|Especifica el tipo de archivo de audio o video|
+|\<embed>| |Inserta un contenedor para una aplicación externa o contenido interactivo como un pligin o un archivo de flash|
+| |src|Indica la ruta del archivo externo|
+| |height|Alto del contenedor|
+| |width|Ancho del contenedor|
+|\<article>| |Indica un autocontenide independiente para mensajes, noticias o comentarios|
+| |contenteditable|Especifica si el contenido de la etiqueta se puede editar o no|
+| |contextmenu|Especifica el menu contextual de un elemento|
+|\<bdi>| |Aislamiento bidimencional, por ejemplo, cuando se define una lista se puede aislar parte del elemento|
+|\<comand>| |Define un comando (una casilla de verificacion o boton de comando) que el usuario puede invocar|
+|\<details>| |Especifica otros detalles que el usuario puede mostrar u ocultar|
+| |open|Especifica que el detalle sera visible para el usuario|
+|\<dialog>| |Define un cuadro de dialogo o ventana|
+|\<summary>| |Define un titulo visible en la etiqueta ``<details>`` Al titulo se puede hacer clic para ver u ocultar los detalles|
+|\<figure>| |Especifica un contenido libre como ilustraciones, diagramas, fotos, listas de codigo, etc.|
+|\<figcaption>| |Define un titulo para la etiqueta ``<figure>``|
+|\<mark>| |Define un resaltado para el texto especificado|
+|\<meter>| |Define una medida escalar dentro de un rango conocido, o un valor fraccionario. Esto tambien s econoce como un indicador|
+| |max|Indica el valor maximo|
+| |min|Indica el valor minimo|
+| |high|Especifica el intervalo de un valor alto|
+| |low|Especifica el intervalo de un valor bajo|
+|\<progress>| |Representa el progreso de una tarea|
+| |max|Especifica la cantidad de tarea que se requiere como maxima|
+| |value|Especifica la cantidad de tarea que se ha completado|
+|\<time>| |Define correctamente una hora (reloj de 24 horas)|
+| |datetime|Da la fecha u hora que se especifique con el formato YYYY-MM-DDThh:mm:ssTZD|
+
 
 
 ## La Etiqueta `<audio>`

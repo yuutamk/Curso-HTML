@@ -1796,6 +1796,140 @@ La etiqueta `<video>` es tu boleto de entrada para agregar videos a tus páginas
 - `width` y `height`: Estos atributos te permiten establecer el ancho y el alto del área donde se mostrará el video.
 - `<source>`: Esta etiqueta se utiliza para especificar la fuente del video y el tipo MIME (Multipurpose Internet Mail Extensions), lo que permite a los navegadores elegir la fuente adecuada según su compatibilidad.
 
+
+#### Ejemplos de multimedia
+
+1. **\<audio>**:
+   ```html
+   <audio controls>
+     <source src="audio_file.mp3" type="audio/mpeg">
+     <source src="audio_file.ogg" type="audio/ogg">
+     Your browser does not support the audio element.
+   </audio>
+   ```
+
+2. **\<video>**:
+   ```html
+   <video width="320" height="240" controls>
+     <source src="movie.mp4" type="video/mp4">
+     <source src="movie.ogg" type="video/ogg">
+     Your browser does not support the video tag.
+   </video>
+   ```
+
+3. **\<source>** (used within `<audio>` or `<video>`):
+   ```html
+   <audio controls>
+     <source src="audio_file.mp3" type="audio/mpeg">
+     <source src="audio_file.ogg" type="audio/ogg">
+     Your browser does not support the audio element.
+   </audio>
+
+   <video width="320" height="240" controls>
+     <source src="movie.mp4" type="video/mp4">
+     <source src="movie.ogg" type="video/ogg">
+     Your browser does not support the video tag.
+   </video>
+   ```
+
+4. **\<embed>**:
+   ```html
+   <embed src="flash_file.swf" width="400" height="300">
+   ```
+
+5. **\<article>**:
+   ```html
+   <article contenteditable="true" contextmenu="menu1">
+     <h1>My Article</h1>
+     <p>This is an editable article.</p>
+   </article>
+
+   <menu type="context" id="menu1">
+     <menuitem label="Edit" onclick="editArticle()"></menuitem>
+     <menuitem label="Delete" onclick="deleteArticle()"></menuitem>
+   </menu>
+   ```
+
+6. **\<bdi>**:
+   ```html
+   <p>In this list, the order of names will be preserved:</p>
+   <ul>
+     <li>User 1: <bdi>User1name</bdi></li>
+     <li>User 2: <bdi>User2name</bdi></li>
+   </ul>
+   ```
+
+7. **\<command>**:
+   ```html
+   <command label="Save" icon="save.png" onclick="saveDocument()">
+   <command type="checkbox" label="Autosave" onclick="toggleAutosave()">
+   ```
+
+8. **\<details>**:
+   ```html
+   <details open>
+     <summary>More Details</summary>
+     <p>Here are the details you can now see!</p>
+   </details>
+   ```
+
+9. **\<dialog>**:
+   ```html
+   <dialog open>
+     <p>This is a dialog box.</p>
+     <button onclick="this.parentElement.close()">Close</button>
+   </dialog>
+   ```
+
+10. **\<summary>**:
+    ```html
+    <details>
+      <summary>Summary of details</summary>
+      <p>Detailed information goes here.</p>
+    </details>
+    ```
+
+11. **\<figure>**:
+    ```html
+    <figure>
+      <img src="image.png" alt="An example image">
+      <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+    ```
+
+12. **\<figcaption>**:
+    ```html
+    <figure>
+      <img src="image.png" alt="An example image">
+      <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+    ```
+
+13. **\<mark>**:
+    ```html
+    <p>This is a <mark>highlighted</mark> text.</p>
+    ```
+
+14. **\<meter>**:
+    ```html
+    <meter value="0.6" min="0" max="1" high="0.8" low="0.2"></meter>
+    ```
+
+15. **\<progress>**:
+    ```html
+    <progress value="70" max="100"></progress>
+    ```
+
+16. **\<time>**:
+    ```html
+    <time datetime="2023-12-31T23:59:59Z">December 31, 2023, 23:59:59</time>
+    ```
+
+    ----
+    
+
+
+
 # Scripts y la Importancia de la Consola en HTML <a name="scripts"></a>
 
 ## ¿Qué son los Scripts en HTML?

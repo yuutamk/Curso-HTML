@@ -1925,8 +1925,128 @@ La etiqueta `<video>` es tu boleto de entrada para agregar videos a tus páginas
     <time datetime="2023-12-31T23:59:59Z">December 31, 2023, 23:59:59</time>
     ```
 
-    ----
-    
+
+# Contenedores Semánticos en HTML
+
+
+En HTML, los contenedores semánticos son elementos que aportan un significado claro y específico al contenido que encierran. Estos elementos permiten a los navegadores y a las herramientas de accesibilidad entender mejor la estructura y el propósito de la página web. Entre los contenedores semánticos más comunes encontramos:
+
+- `<header>`
+- `<nav>`
+- `<main>`
+- `<section>`
+- `<article>`
+- `<aside>`
+- `<footer>`
+
+## ¿Por Qué Son Importantes?
+
+### Mejora de la Accesibilidad
+
+Los contenedores semánticos ayudan a las tecnologías de asistencia, como los lectores de pantalla, a interpretar y navegar por el contenido de manera más eficiente. Por ejemplo, un lector de pantalla puede anunciar a un usuario que está entrando en la navegación (`<nav>`) o en una sección principal de contenido (`<main>`), facilitando una mejor experiencia de usuario.
+
+### SEO (Optimización para Motores de Búsqueda)
+
+Los motores de búsqueda utilizan los contenedores semánticos para comprender la estructura y el contenido de una página web. Al emplear estos elementos correctamente, ayudas a los motores de búsqueda a indexar tu contenido de manera más efectiva, lo que puede mejorar tu posicionamiento en los resultados de búsqueda.
+
+### Mantenimiento y Escalabilidad
+
+Una estructura bien definida con contenedores semánticos facilita el mantenimiento y la escalabilidad del código. Otros desarrolladores (o tú mismo en el futuro) podrán comprender rápidamente la estructura del documento, lo que hace que trabajar en el código sea más eficiente.
+
+## Explorando Cada Contenedor Semántico
+
+### `<header>`
+
+Este elemento se utiliza para definir un encabezado para un documento o una sección. Suele contener información introductoria o enlaces de navegación.
+
+```html
+<header>
+  <h1>Bienvenido a Mi Blog</h1>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre Mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+```
+
+### `<nav>`
+
+El elemento `<nav>` representa una sección de una página cuyo propósito es proporcionar enlaces de navegación.
+
+```html
+<nav>
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+```
+
+### `<main>`
+
+El elemento `<main>` representa el contenido principal del `<body>`. Solo debe haber un `<main>` por documento.
+
+```html
+<main>
+  <section>
+    <h2>Últimos Artículos</h2>
+    <article>
+      <h3>Entendiendo CSS Grid</h3>
+      <p>CSS Grid es una herramienta poderosa para crear layouts complejos...</p>
+    </article>
+  </section>
+</main>
+```
+
+### `<section>`
+
+El elemento `<section>` representa una sección genérica de contenido. Se usa para agrupar contenido temáticamente relacionado.
+
+```html
+<section>
+  <h2>Sobre Mí</h2>
+  <p>Mi nombre es Juan y soy un desarrollador web apasionado por la enseñanza...</p>
+</section>
+```
+
+### `<article>`
+
+El elemento `<article>` se utiliza para representar un contenido independiente y auto-contenido.
+
+```html
+<article>
+  <h3>JavaScript Avanzado</h3>
+  <p>En este artículo exploraremos técnicas avanzadas de JavaScript...</p>
+</article>
+```
+
+### `<aside>`
+
+El elemento `<aside>` representa una parte del contenido que está ligeramente relacionado con el contenido principal.
+
+```html
+<aside>
+  <h4>Noticias Relacionadas</h4>
+  <ul>
+    <li><a href="#noticia1">Nueva versión de HTML</a></li>
+    <li><a href="#noticia2">Cómo mejorar tu CSS</a></li>
+  </ul>
+</aside>
+```
+
+### `<footer>`
+
+El elemento `<footer>` representa el pie de página de un documento o sección. Suele contener información sobre el autor, derechos de autor, enlaces de términos de uso, etc.
+
+```html
+<footer>
+  <p>&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+</footer>
+```
 
 
 
@@ -1973,3 +2093,7 @@ function dividir(a, b) {
 console.log(dividir(10, 2)); // Muestra el resultado en la consola
 console.log(dividir(8, 0));  // Genera un error y muestra un mensaje en la consola
 ```
+
+
+# CSS 3
+## 👉[Da clic aquí](main-CSS.md)👈

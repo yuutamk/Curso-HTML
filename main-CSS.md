@@ -376,13 +376,13 @@ Por defecto un hiperenlace se muestra subrayado y en color azul, sin embargo lo 
 
 Las pseudoclases son unas palabras claves que se añaden a los selectores en las hojas de estilo para indicar un estado del selector. Respecto al selector hiperenlace tenemos cuatro pseudoclases:
 
-1.- link, es el estado inicial del enlace al cargar la página, no se ha hecho clic sobre él, es decir, no visitado.
+1. link, es el estado inicial del enlace al cargar la página, no se ha hecho clic sobre él, es decir, no visitado.
 
-2.- visited, visitado, es decir, ya se ha hecho clic anteriormente sobre él.
+2. visited, visitado, es decir, ya se ha hecho clic anteriormente sobre él.
 
-3.- hover, el cursor está situado encima del enlace.
+3. hover, el cursor está situado encima del enlace.
 
-4.- active, mientras se mantiene pulsado el botón al hacer clic sobre el enlace.
+4. active, mientras se mantiene pulsado el botón al hacer clic sobre el enlace.
 
 Utilizando las hojas de estilo podemos dar formato a las pseudoclases.
 

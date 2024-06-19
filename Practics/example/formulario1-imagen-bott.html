@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario simple imagen</title>
+</head>
+<body>
+    <h3>Ejemplo de formulario</h3>
+    <form>
+        <p>
+            <div>
+                <b>Datos del alumno</b>
+            </div>
+        Nombre: <input type="text" name="nombre">
+        <br>
+        Apellidos: <input type="text" name="apellidos">
+        </p>
+        
+        <p>
+            <div>
+                <b>Identificación del Alumno en el sistema</b>
+            </div>
+        Usuario: <input type="text" name="usuario">
+        <br>
+        Contraseña: <input type="text" name="contrasena">
+        </p>
+        <p>
+            <div>
+                <b>¿Cual es tu sexo?</b>
+            </div>
+        <input type="radio" name="sexo" value="masc">Masculino
+        <br>
+        <input type="radio" name="sexo" value="fem">Femenino
+        <br>
+        <input type="radio" name="otro" value="otro">Otro    
+        </p>
+        <p>
+            <div>
+                <b>¿Qué programa de la suite de adobe te gusta?</b>
+            </div>
+            <input type="checkbox" name="programas" value="Flash"> Flash <br>
+            <input type="checkbox" name="programas" value="Dream"> Dream weaber <br>
+            <input type="checkbox" name="programas" value="Illus"> Illustrator <br>
+            <input type="checkbox" name="programas" value="Fire"> Fireworks <br>
+            <input type="checkbox" name="programas" value="Photo"> Photoshop 
+        </p>
+        <p>
+            <div>
+                <b>Anexa tu imagen</b>
+            </div>
+            <input type="file" name="Archivo" value="archivo">
+        </p>
+        <p>
+            <div>
+                <b>Elige la maestría que vas a cursar</b>
+            </div>
+            <select name="MateriaCursar" id="">
+                <option value="win11">Windos 11</option>
+                <option value="pub">Publisher</option>
+                <option value="word">Word</option>
+                <option value="pp">Power Point</option>
+                <option value="excel">Excel</option>
+            </select>
+        </p>
+        <p>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </div>
+            <br>
+            <input type="image" src="/src/samples/LogoPilares.jpg" alt="LogoPilares">
+        </p>
+
+
+    </form>
+</body>
+</html>

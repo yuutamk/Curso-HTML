@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de CSS</title>
+  <style>
+    div{
+      border: 1px solid black;
+      padding: 20px;
+      background-image: url(/src/samples/LogoPilares.jpg);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 150px 60px;
+    }
+
+    #division1{
+      background-origin: border-box;
+    }
+
+    #division2{
+      background-origin: content-box;
+    }
+  </style>
+</head>
+<body>
+  <p>background-origin:border-box:</p>
+  <div id="division1">
+    Este es un ejemplo para colocar una imagen como fondo pra un div y esta imagen esta colocada a partir del borde del cuadro
+  </div>
+  <p>background-origin:content-box:</p>
+  <div id="division2">
+    Este es un ejemplo para colocar una imagen como fondo pra un div  y  esta imagen esta colocada dentro del contexto del cuadro. Observe en el codigo la propiedad padding
+  </div>
+</body>
+</html>

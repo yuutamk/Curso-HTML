@@ -150,3 +150,8 @@ text-align: center;
 .body_excerpt strong {
 display: block;
 }
+
+html{
+    color: rgba(43, 41, 41, 0.801);
+}
+

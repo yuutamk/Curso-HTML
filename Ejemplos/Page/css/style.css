@@ -12,7 +12,9 @@ body {
 
 
 .imagen-container {
-  display: flex;  
+  display: flex;
+  min-width: 120px; 
+  max-height: 150px; 
 
 }
 

@@ -1,34 +1,58 @@
-<details>
-<summary><h3>MENÚ HTML</h3></summary>
-
-1. [Frontend](#front)
-2. [Backend](#backend)
-3. [Conclusión Backend y Frontend](#conclusion-front-back)
-4. [Página Web](#pagina-web)
-5. [Anatomía de la web](#anatomia-web)
-6. [IDE Y EDITORES DE CODIGO](#ide-edit)
-7. [Mi primera página web](#primera-web)
-8. [Etiquetas de Texto](#etiquetas-texto)
-9. [UTF-8](#UTF-8)
-10. [Etiqueta \<p>](#etiqueta-p)
-11. [Etiqueta \<blockquote>](#blockquote)
-12. [Etiqueta \<blockquote>](#blockquote)
-13. [Etiqueta \<cite>](#cite)
-14. [Tablas](#tablas)
-15. [Imágenes](#imagen)
-16. [Hipervínculos](#hipervinculos)
-17. [Marcos](#marcos)
-18. [Formularios](#formularios)
-19. [Elementos Multimedia](#multimedia)
-20. [Scripts](#scripts)
-<!-- 10. [Elemento 10](#elemento-10) -->
-
-
-</details>
+# DESARROLLO DE PAGINAS WEB
 
 
 
-# Frontend: La Magia Visible de la Web<a name="front"></a>
+
+
+
+## HTML
+
+[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
+
+[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
+
+[![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
+
+-------------------------------------
+HTML (Hyper Text Markup Lenguage) es un leguaje de marcado de texto, lo cual nos indica que no es un lenguaje de programación como Java, PHP, C o VisualBasic. HTML es el lenguaje para escribir páginas web. Las marcas, conocidas como etiquetas, describen la forma en la que se estructura el contenido de una página web.
+
+Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta **\<p>** se utiliza para delimitar párrafos de texto y la etiqueta **\<img>** para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos.
+
+
+
+El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
+
+
+ 
+
+Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
+
+En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo CSS, ya que Javascript entra dentro de otra categoría, la de los lenguajes de programación.
+
+Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
+
+
+
+## 🌐 ¿Cómo Funciona un Navegador Web?
+
+Un navegador web es una herramienta que usas todos los días, como Google Chrome, Mozilla Firefox, Microsoft Edge o Safari, para explorar la web. Pero, ¿qué pasa realmente cuando escribes algo en la barra de búsqueda y presionas "Enter"? Vamos a verlo paso a paso.
+
+### **1. Tu Portal a Internet**
+Cuando abres un navegador y escribes una dirección web (como `www.ejemplo.com`), es como si le estuvieras dando una dirección específica a tu navegador. Esta dirección, también conocida como URL, le dice al navegador a dónde debe ir para encontrar la información que necesitas.
+
+### **2. El Mensajero Rápido: HTTP**
+Una vez que el navegador sabe a dónde ir, utiliza un sistema de comunicación llamado HTTP (Protocolo de Transferencia de Hipertexto). Piensa en HTTP como el idioma que usan los navegadores y los sitios web para entenderse. A través de este idioma, tu navegador pide la información que necesitas, como textos, imágenes o videos.
+
+### **3. El Traductor: Motor de Renderizado**
+Después de recibir la información, el navegador necesita interpretarla y mostrarla en tu pantalla. Aquí es donde entra en juego el motor de renderizado, que es como un traductor que convierte el código de los sitios web (escrito en un lenguaje llamado HTML) en las páginas que ves y con las que interactúas.
+
+### **4. Navegando por la Web: Hipervínculos**
+Mientras navegas por una página web, verás palabras o imágenes que puedes hacer clic. Estos se llaman hipervínculos, y son como puertas que te llevan a otras páginas en la web. Cada uno de estos enlaces tiene su propia dirección (URL), que el navegador sigue para mostrarte la siguiente página.
+
+### **5. Haciendo que Todo Funcione Bien**
+Un detalle importante es que no todos los navegadores muestran las páginas web exactamente de la misma manera. A veces, una página puede verse un poco diferente en Chrome que en Firefox. Los desarrolladores web trabajan duro para asegurarse de que los sitios se vean bien en cualquier navegador que uses, siguiendo unas reglas llamadas "estándares web".
+
+## Frontend: La Magia Visible de la Web<a name="front"></a>
 
 Cuando navegas por la web, exploras sitios web y aplicaciones con diseños y funcionalidades únicas. Pero, ¿alguna vez te has preguntado cómo se crea esa parte que ves y con la que interactúas en tu pantalla? Esa parte es el **Frontend**. Profundizaremos en su significado, importancia y cómo tres lenguajes mágicos, HTML, CSS y JavaScript, trabajan en conjunto para dar vida a la experiencia digital que todos disfrutamos.
 
@@ -171,34 +195,6 @@ A medida que los navegadores web se volvían más potentes y las conexiones a In
 
 Hoy en día, las páginas web no solo ofrecen información estática, sino que también son plataformas interactivas que permiten realizar una amplia variedad de tareas, desde enviar correos electrónicos hasta editar vídeos, todo ello directamente desde el navegador web.
 
-
-## HTML
-
-[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
-
-[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
-
-[![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
-
--------------------------------------
-HTML (Hyper Text Markup Lenguage) es un leguaje de marcado de texto, lo cual nos indica que no es un lenguaje de programación como Java, PHP, C o VisualBasic. HTML es el lenguaje para escribir páginas web. Las marcas, conocidas como etiquetas, describen la forma en la que se estructura el contenido de una página web.
-
-Las etiquetas describen diferentes elementos de la página, por ejemplo, la etiqueta **\<p>** se utiliza para delimitar párrafos de texto y la etiqueta **\<img>** para definir imágenes. El encargado de interpretar estas etiquetas es un programa llamado navegador (browser), por ejemplo, el navegador Chrome de Google o el Firefox de Mozilla. Los archivos que contienen el código HTML tienen la extensión .htm o .html, y son archivos de texto plano (sin formato). Más adelante veremos qué editores se pueden utilizar para crearlos.
-
-
-
-El lenguaje HTML es un estándar definido y mantenido por el consorcio internacional World Wide Web Consortium (W3C) creado el 1 de octubre de 1994, por Tim Berners-Lee en el Instituto Tecnológico de Massachusetts (MIT), actual sede central del consorcio.
-
-
- 
-
-Una página web debe estar escrita en HTML pero también suele incorporar otros elementos como hojas de estilo CSS y programación con el lenguaje Javascript. Con CSS se define el aspecto estético de la página y con Javascript se pueden realizar tareas adicionales cómo abrir y cerrar ventanas, validar los datos introducidos por los usuarios, y otras tareas que requieren ser programadas. El conjunto de HTML, CSS y Javascript es lo que se conoce como front-end o capa de presentación. Esta capa se ejecuta en el navegador, mientras que con back-end o capa de datos se hace referencia a la programación realizada en el servidor con lenguajes de programación web, (Java, PHP, Python, ...) normalmente para obtener y grabar información en una base de datos. Los lenguajes de programación orientados a la web, ejecutados en el servidor, son capaces de generar el código HTML que finalmente se va a ver en el navegador web.
-
-En este curso nos vamos a centrar en el lenguaje HTML y en las hojas de estilo CSS, ya que Javascript entra dentro de otra categoría, la de los lenguajes de programación.
-
-Vamos a presentar las etiquetas de HTML agrupadas en bloques según su uso, veremos primero las más utilizadas, de esta forma iremos creando páginas web sencillas que completaremos progresivamente. Así resultará más fácil entender HTML para alguien que empieza desde cero. 
-
-
 # Página Web<a name="pagina-web"></a>
 Una **página web** es como una ventana mágica que nos conecta con el vasto mundo de Internet. Es un documento digital lleno de maravillas, como texto, imágenes, videos y sonidos, todo organizado de una manera que podemos ver y explorar utilizando un programa especial llamado "navegador web," como Google Chrome o Mozilla Firefox.
 
@@ -300,6 +296,15 @@ Atom es un editor de texto gratuito y de código abierto desarrollado por GitHub
 ![atom](https://www.edivaldobrito.com.br/wp-content/uploads/2018/06/editor-de-codigo-atom-no-linux-via-snap.jpg)
 
 ----
+## Estructura de carpetas
+
+¿Por Qué Es Importante la Estructura de Carpetas?
+Una estructura de carpetas bien organizada te ayuda a:
+
+Mantener el orden: Facilita la localización de archivos específicos.
+Mejorar la colaboración: Facilita que otros desarrolladores comprendan tu proyecto.
+Aumentar la escalabilidad: Permite agregar nuevas características sin caos.
+Optimizar el mantenimiento: Simplifica la actualización y corrección de errores.
 
 ### Estructura de Carpetas Básica:
 
@@ -387,20 +392,12 @@ JavaScript es el lenguaje de programación que permite la interactividad en las 
 
 En este ejemplo, cuando el usuario hace clic en el botón, aparece un mensaje de alerta.
 
-## Estructura de carpetas
-
-¿Por Qué Es Importante la Estructura de Carpetas?
-Una estructura de carpetas bien organizada te ayuda a:
-
-Mantener el orden: Facilita la localización de archivos específicos.
-Mejorar la colaboración: Facilita que otros desarrolladores comprendan tu proyecto.
-Aumentar la escalabilidad: Permite agregar nuevas características sin caos.
-Optimizar el mantenimiento: Simplifica la actualización y corrección de errores.
 
 
 
 
----
+
+
 
 ## ¿Qué son las Etiquetas HTML?
 

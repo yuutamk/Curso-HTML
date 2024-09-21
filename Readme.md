@@ -1,10 +1,5 @@
 # DESARROLLO DE PAGINAS WEB
 
-
-
-
-
-
 ## HTML
 
 [HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)

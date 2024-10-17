@@ -1,6 +1,6 @@
 # Formulario con imagen
 
-![resultado final](example/formulario-imagen.png)
+![resultado final](./example/Formulario-imagen.png)
 
 ### Preparando el Terreno
 

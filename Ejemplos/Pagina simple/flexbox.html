@@ -9,12 +9,13 @@
             width: 100%;
             margin: 0;
             padding: 0;
-            min-height: 100dvh; /* dinamic viewport height */
-
+            
+            /*  min-height: 100dvh; /* dinamic viewport height */ */
 
 
             display: flex;
             justify-content: center;
+            align-items: stretch;
 
         }
 
@@ -27,7 +28,7 @@
             font-size: 1.3rem;
 
 
-            max-height: 20rem;
+            /* max-height: 20rem; */
         }
 
         .item:nth-child(odd){
@@ -36,9 +37,12 @@
         }
 
         .container{
+            width: 100%;
             display: flex;
             flex-direction: row;
-            max-width: 80%;
+            justify-content: center;
+            height: 100dvh;
+            align-items: center;
         }
     </style>
 

@@ -92,6 +92,8 @@ div + p {
 El primer selector se aplicará a todos los párrafos que son hermanos de un `div`, mientras que el segundo se aplicará solo al primer párrafo hermano contiguo a un `div`.
 
 
+![combinadores](./src/IMG/Combinators.png)
+
 ## Atributos más comunes
 
 ### Margen y Relleno (Margin y Padding)

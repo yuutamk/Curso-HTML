@@ -122,9 +122,7 @@ Aquí tienes el texto transformado en una tabla de contenido dividida en tres co
 | tbody      | Cuerpo de tabla (grupo de filas)             |                        |
 | thead      | Cabecera de tabla (grupo de filas)           |                        |
 | tfoot      | Pie de tabla (grupo de filas)                |                        |
-| tr        
-
- | Fila                                        |                        |
+| tr        |    Fila                                                |                      |
 | td         | Celda                                       | colspan, rowspan, headers |
 | th         | Celda de cabecera                            | colspan, rowspan, headers, scope, abbr |
 | col        | Columna                                     | span                   |
@@ -153,7 +151,7 @@ Aquí tienes el texto transformado en una tabla de contenido dividida en tres co
 | Etiqueta   | Descripción                                  | Atributos principales |
 | ---------- | ------------------------------------------- | ---------------------- |
 | details    | Desplegable                                 |                        |
-| summary    | Leyenda para <details>                      |                        |
+| summary    | Leyenda para \<details>                      |                        |
 | dialog     | Cuadro de diálogo de una aplicación          | open                   |
 
 **Scripts**

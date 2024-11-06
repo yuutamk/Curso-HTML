@@ -1,3 +1,8 @@
-div p {
+
+h2 + p{
+    color: purple;
+}
+
+div p{
     color: red;
-  }
+}

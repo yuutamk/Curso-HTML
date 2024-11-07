@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.card-logo,
+.card-container,
+.card-name {
+    position: relative;
+    background-image: linear-gradient(140deg, #720018, #98001e, #000);
+    box-shadow: 0px 0px 40px 5px rgba(35,4,7,1);
+}
+
+.card-logo {
+    width: 260px;
+    height: 400px;
+    position: relative;
+    left: -175px;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.logo img {
+    width: 135px;
+}
+
+.club-name {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.card-container {
+    width: 420px;
+    min-height: 500px;
+}
+
+.img-uno {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    z-index: 3;
+}
+
+.img-uno img {
+    width: 380px;
+    height: 550px;
+}
+
+.shirt-number {
+    display: inline-block;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 300px;
+    padding: 40px 0 15px;
+    color: #fff;
+}
+
+.firm {
+    position: absolute;
+    left: 0;
+    bottom: 99px;
+    rotate: -20deg;
+}
+
+.img-firm {
+    width: 190px;
+}
+
+.t-mobile,
+.bundesliga {
+    position: absolute;
+}
+
+.img-tmobile {
+    width: 42px;
+}
+
+.img-bundes {
+    width: 35px;
+}
+
+.t-mobile {
+    left: 10px;
+    bottom: 55px;
+}
+
+.bundesliga {
+    left: 65px;
+    bottom: 55px;
+}
+
+.card-name {
+    width: 100px;
+    height: 380px;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.name-1 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 48px;
+    color: #fff;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+}
+
+.descriptive-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 45px;
+    background-image: url(./img/fondo.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px -2px 9px 0px rgba(20,2,4,1);
+    z-index: 6;
+}
+
+.descriptive-text p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}

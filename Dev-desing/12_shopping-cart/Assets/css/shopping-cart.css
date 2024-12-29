@@ -1,0 +1,35 @@
+.title-checkout{
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.title-container{
+    display: flex;
+
+    align-items: baseline;
+
+}
+
+.title-container img{
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+
+.product-detail{
+    margin: 24px;
+    position: absolute;
+
+   
+    
+}
+
+@media (max-width:640px) {
+    .product-detail{
+        width: 100%;
+        position: absolute;
+        right: -18px;
+        box-sizing:initial;
+        
+    }
+    
+}

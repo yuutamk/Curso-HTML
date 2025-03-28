@@ -1,6 +1,6 @@
 # HTML Informativo
 
-![etiquetas html](./example/etiquetas-html.jpeg)
+![etiquetas html](../example/etiquetas-html.jpeg)
 
 ## Paso 1: Estructura Básica del Documento
 

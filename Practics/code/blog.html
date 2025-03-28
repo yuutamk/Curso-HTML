@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        article {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        article h3 {
+            margin-top: 0;
+        }
+        aside {
+            background-color: #e9e9e9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside h4 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Blog</h1>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+          <h2>Últimos Artículos</h2>
+          <article>
+            <h3>Entendiendo CSS Grid</h3>
+            <p>CSS Grid es una herramienta poderosa para crear layouts complejos...</p>
+          </article>
+          <article>
+            <h3>JavaScript Avanzado</h3>
+            <p>En este artículo exploraremos técnicas avanzadas de JavaScript...</p>
+          </article>
+        </section>
+        <div class="content">
+            <section>
+                <h2>Sobre Mí</h2>
+                <p>Mi nombre es Juan y soy un desarrollador web apasionado por la enseñanza...</p>
+            </section>
+            <aside>
+                <h4>Noticias Relacionadas</h4>
+                <ul>
+                    <li><a href="#noticia1">Nueva versión de HTML</a></li>
+                    <li><a href="#noticia2">Cómo mejorar tu CSS</a></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+</html>

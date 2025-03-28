@@ -1,6 +1,6 @@
 # Lenguajes de Programación
 
-![Lenguajes de programacion](./example/lenguajes-programacion.jpeg)
+![Lenguajes de programacion](../example/lenguajes-programacion.jpeg)
 
 ## Paso 1: La Estructura Básica
 

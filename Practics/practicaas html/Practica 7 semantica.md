@@ -1,5 +1,8 @@
 # Página Web HTML semantica
 
+Vista de la pagina que vamos a realizar
+
+![preview](./src/blog.png)
 ### Estructura Básica del Documento
 
 Comenzamos con el esqueleto básico de un documento HTML5.

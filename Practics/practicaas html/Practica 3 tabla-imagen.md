@@ -2,7 +2,7 @@
 
 Vamos a analizar y comprender el código HTML presentado bloque a bloque. Este documento HTML muestra información sobre software, sus tipos y algunos ejemplos. A continuación, se explica cada sección del código:
 
-![resultado final](example/tabla-imagen.jpeg)
+![resultado final](../example/tabla-imagen.jpeg)
 
 #### 1. Declaración del documento y configuración básica
 

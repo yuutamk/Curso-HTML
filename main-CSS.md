@@ -297,7 +297,7 @@ h1 {
 strong {
     font-weight: bold; /* Texto en negritas */
 }
-
+```
 ### Ejemplo:
 
 ```html

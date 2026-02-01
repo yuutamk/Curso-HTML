@@ -1,5 +1,5 @@
 **¿Cómo descargar los assets?**
-Lo primero es entrar al [prototipo del proyecto](https://www.figma.com/design/sMmlQaZldfDcLERYYWe6h4/Bata-Bit?node-id=68-168) en Figma.
+Lo primero es entrar al [prototipo del proyecto](https://www.figma.com/design/AaH1Tub9QeF8s1rSQymRCO/Bata-Bit--first-mobile-?node-id=44-593&t=dK9UTqdgEBN4u3B6-1) en Figma.
 
 - Para descargar cualquier recurso, hacemos clic sobre él para ver sus detalles en el panel derecho.
 - Vamos a la pestaña **“Exportar”**.

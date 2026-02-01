@@ -2,9 +2,12 @@
 
 ## HTML
 
-[HTML EN 3 MINUTOS O MENOS [Video]](/src/video/HTML%20EN%203%20MIN.mp4)
 
-[ORIGEN DE INTERNET](/src/video/HTML%20BASIC.mp4)
+
+[![HTML EN 3 MINUTOS O MENOS](https://i.ytimg.com/vi/xybkAwMt4jg/maxresdefault.jpg)](https://www.youtube.com/watch?v=xybkAwMt4jg)
+
+[![ORIGEN DE INTERNET](https://i.ytimg.com/vi/k1DxJt54dwY/maxresdefault.jpg)](https://www.youtube.com/watch?v=k1DxJt54dwY)
+
 
 [![Los Orígenes del lenguaje HTML](https://i.ytimg.com/vi/FId9w-FMJJ0/maxresdefault.jpg)](https://www.youtube.com/watch?v=FId9w-FMJJ0&list=TLPQMjYwOTIwMjNy9lhhDYApsQ&index=10)
 

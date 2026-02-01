@@ -1,5 +1,9 @@
 ## Introducción a las hojas de estilo CSS
 
+
+[![ORIGEN DE CSS](https://i.ytimg.com/vi/dUtyt1qc97k/maxresdefault.jpg)](https://www.youtube.com/watch?v=dUtyt1qc97k)
+
+
 Las hojas de estilo están muy relacionadas con las etiquetas de HTML por lo que deberían explicarse de forma simultánea.
 
 Antes de CSS, el formato se solía incluir directamente en las etiquetas HTML. Por ejemplo, para definir el ancho de una celda en una tabla, se usaba algo como `<td width="95%">`. Afortunadamente, CSS nos brinda una forma más elegante y eficiente de hacerlo.

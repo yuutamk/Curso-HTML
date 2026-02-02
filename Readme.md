@@ -278,7 +278,7 @@ Sublime Text es otro editor de texto muy popular. Es conocido por su velocidad y
 - **Goto Anything**: Navega rápidamente a cualquier archivo, símbolo o línea.
 - **Modo Distraction-Free**: Modo de pantalla completa sin distracciones.
 
-![sublime text](https://www.aluracursos.com/blog/assets/sublime-text-uno-mejores-editores/img2.png)
+![sublime text](https://kinsta.com/wp-content/uploads/2022/02/Untitled-8.jpg)
 
 ### Atom <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Atom_1.0_icon.png/768px-Atom_1.0_icon.png" width="20" height="20" alt="VS Code"></img>
 
@@ -414,7 +414,7 @@ La estructura básica de una etiqueta HTML es la siguiente:
 Sin embargo, hay algunas etiquetas que no requieren una etiqueta de cierre ni contenido. Por ejemplo, la etiqueta `<br>` que inserta un salto de línea.
 
 
-n HTML5, hay una amplia variedad de etiquetas que nos permiten estructurar y organizar el contenido de nuestras páginas web. Aquí te presentamos algunas de las más usadas:
+En HTML5, hay una amplia variedad de etiquetas que nos permiten estructurar y organizar el contenido de nuestras páginas web. Aquí te presentamos algunas de las más usadas:
 
 - **`<a>`**: Define y da forma a un ancla o enlace.
 - **`<abbr>`**: Introduce una abreviatura.

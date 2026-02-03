@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/logo.svg" alt="">
+        <div class="header--title-container">
+            <h1>La próxima revolución en el intercambio de criptomonedas</h1>
+            <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+            <a class="header--button" href="#plans">Conoce nuestros planes <span></span></a>
+        </div>
+    </header>
+    <main>
+        <section class="main-exchange-container">
+            <div class="background_img"></div>
+            <div class="main-exchange-container--title">
+                <h2>Visibilizamos todas las tasas de cambio.</h2>
+                <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.
+                </p>
+            </div>
+            <section class="main-tables-container">
+                <div class="main-currency-table" id="table1">
+                    <p class="currency-table--title">Monedas</p>
+                    <div class="currency-table--container">
+                        <table>
+                            <tr>
+                                <td class="table__top-left">Bitcoin</td>
+                                <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ethereum</td>
+                                <td class="table__right">$0.07 <span class="up"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Ripple</td>
+                                <td class="table__right">$2.15 <span class="down"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom-left">Stellar</td>
+                                <td class="table__bottom-right table__right">$4.96 <span class="up"></span></td>
+                            </tr>
+                        </table>
+                        <!-- flecha derecha -->
+                        <a href="#table2" class="table-go-right">
+                            <img src="./assets/icons/arrow-small-right.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="currency-table--date">
+                        <p><b>Actualizado:</b> 19 Julio 23:45</p>
+                    </div>
+                </div>
+
+                <!-- tabla 2 -->
+                <div class="main-currency-table main-comissions-table" id="table2">
+                    <p class="currency-table--title comissions-table--title">Comisiones</p>
+                    <div class="currency-table--container">
+                        <table>
+                            <tr>
+                                <td class="table__top-left">Bitrade</td>
+                                <td class="table__top-right table__right">$12.96</td>
+                            </tr>
+                            <tr>
+                                <td>Bitpreco</td>
+                                <td class="table__right">$13.07</td>
+                            </tr>
+                            <tr>
+                                <td>Novadax</td>
+                                <td class="table__right">$14.15</td>
+                            </tr>
+                            <tr>
+                                <td class="table__bottom-left">Coinext</td>
+                                <td class="table__bottom-right table__right">$14.96</td>
+                            </tr>
+                        </table>
+                        <!-- flecha derecha -->
+                        <a href="#table1" class="table-go-right table-go-left">
+                            <img src="./assets/icons/arrow-small-left.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="currency-table--date">
+                        <p><b>Actualizado:</b> 19 Julio 23:45</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="main-product-detail">
+            <span class="product-detail--batata-logo"></span>
+            <div class="product-detail--title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card">
+                    <span class="clock"></span>
+                    <p class="product--card-title">Tiempo real</p>
+                    <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más
+                        determinan el comportamiento.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="eye"></span>
+                    <p class="product--card-title">No hay tasas escondidas</p>
+                    <p class="product--card-body">Ni en la compra o al momento de exit, Batabit siempre te muestra el
+                        costo real de lo que estás
+                        adquiriendo.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="dollar"></span>
+                    <p class="product--card-title">Compara monedas</p>
+                    <p class="product--card-body">No más rumores, con Babtabit sabrás el valor real de cada moneda en el
+                        mercado actual.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="check"></span>
+                    <p class="product--card-title">Información confiable</p>
+                    <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su
+                        contenido mientras se
+                        actualizan.</p>
+                </article>
+            </section>
+        </section>
+        <section class="bitcoin-img-container">
+            <h2>Conócelo hoy</h2>
+        </section>
+        <section id="plans" class="main-plans-container">
+            <div class="plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <section class="plans-container--slider">
+                <article class="plans-container--card">
+                    <p class="recomended">Explorador</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Prueba Mensual</h3>
+                        <p class="plan-card--price"><span>$</span> 29</p>
+                        <p class="plan-card--saving">
+                        <ul class="plan-card--saving--list">
+                            <li>✓ Acceso completo a la plataforma</li>
+                            <li>✓ Tasas en tiempo real</li>
+                            <li>✓ Información verificada</li>
+                        </ul>
+                        </p>
+                        <button class="plan-card--cta">Comenzar Prueba Pago Anual<span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <p class="recomended">⭐ Pro Trader</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Elección inteligente</h3>
+                        <p class="plan-card--price"><span>$</span> 79</p>
+                        <p class="plan-card--saving">
+                        <ul class="plan-card--saving--list">
+                            <li>✓ Acceso completo a la plataforma</li>
+                            <li>✓ Tasas en tiempo real</li>
+                            <li>✓ Información verificada</li>
+                            <li>✓ Ahorras $129 vs mensual</li>
+                            <li>✓ La mayoría elige este plan</li>
+                        </ul>
+                        </p>
+                        <button class="plan-card--cta">Elegir Plan Recomendado<span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <p class="recomended">👑 Elite</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago único</h3>
+                        <p class="plan-card--price"><span>$</span> 199</p>
+                        <p class="plan-card--saving">
+                        <ul class="plan-card--saving--list">
+                            <li>✓ Acceso completo a la plataforma</li>
+                            <li>✓ Tasas en tiempo real</li>
+                            <li>✓ Información verificada</li>
+                            <li>✓ Sin renovaciones futuras</li>
+                            <li>✓ Acceso ilimitado para siempre</li>
+                            <li>✓ Máximo ahorro a largo plazo</li>
+                        </ul>
+                        </p>
+                        <button class="plan-card--cta">Acceso Elite Ahora<span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
